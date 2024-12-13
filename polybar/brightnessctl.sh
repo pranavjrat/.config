@@ -14,4 +14,3 @@ fi
 
 echo "$BRIGHTNESS_ICON"
 
-
