@@ -1,0 +1,8 @@
+[
+  {
+    "command": [
+      "/usr/bin/dolphin"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]
