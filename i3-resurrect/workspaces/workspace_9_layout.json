@@ -20,79 +20,56 @@
   "workspace_layout": "default",
   "nodes": [
     {
-      "border": "normal",
-      "current_border_width": -1,
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 960,
+        "y": 0,
+        "width": 958,
+        "height": 1041
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "Darknet Diaries \u2013 True stories from the dark side of the Internet. \u2014 Mozilla Firefox",
+      "orientation": "none",
+      "percent": 0.5,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {
+          "class": "^firefox$",
+          "instance": "^Navigator$"
+        }
+      ]
+    },
+    {
+      "border": "pixel",
+      "current_border_width": 1,
       "floating": "auto_off",
       "fullscreen_mode": 0,
       "geometry": {
         "x": 0,
         "y": 0,
-        "width": 0,
-        "height": 0
+        "width": 958,
+        "height": 1041
       },
-      "layout": "tabbed",
+      "layout": "splith",
       "marks": [],
-      "name": null,
-      "orientation": "horizontal",
-      "percent": 1.0,
+      "name": "I stopped using the useEffect hook to fetch data. React Query works, but is it easier? | by Leejjon | Medium \u2014 Mozilla Firefox",
+      "orientation": "none",
+      "percent": 0.5,
       "scratchpad_state": "none",
       "sticky": false,
       "type": "con",
       "workspace_layout": "default",
-      "nodes": [
+      "swallows": [
         {
-          "border": "pixel",
-          "current_border_width": 1,
-          "floating": "auto_off",
-          "fullscreen_mode": 0,
-          "geometry": {
-            "x": 0,
-            "y": 0,
-            "width": 1918,
-            "height": 1041
-          },
-          "layout": "splith",
-          "marks": [],
-          "name": "I stopped using the useEffect hook to fetch data. React Query works, but is it easier? | by Leejjon | Medium \u2014 Mozilla Firefox",
-          "orientation": "none",
-          "percent": 0.5,
-          "scratchpad_state": "none",
-          "sticky": false,
-          "type": "con",
-          "workspace_layout": "default",
-          "swallows": [
-            {
-              "class": "^firefox$",
-              "instance": "^Navigator$"
-            }
-          ]
-        },
-        {
-          "border": "pixel",
-          "current_border_width": 1,
-          "floating": "auto_off",
-          "fullscreen_mode": 0,
-          "geometry": {
-            "x": 0,
-            "y": 28,
-            "width": 1918,
-            "height": 1014
-          },
-          "layout": "splith",
-          "marks": [],
-          "name": "(7) how to build a HACKING lab (to become a hacker) - YouTube \u2014 Mozilla Firefox",
-          "orientation": "none",
-          "percent": 0.5,
-          "scratchpad_state": "none",
-          "sticky": false,
-          "type": "con",
-          "workspace_layout": "default",
-          "swallows": [
-            {
-              "class": "^firefox$",
-              "instance": "^Navigator$"
-            }
-          ]
+          "class": "^firefox$",
+          "instance": "^Navigator$"
         }
       ]
     }

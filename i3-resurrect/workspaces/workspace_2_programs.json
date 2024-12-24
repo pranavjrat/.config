@@ -4,11 +4,5 @@
       "/usr/bin/alacritty"
     ],
     "working_directory": "/home/heisenberg"
-  },
-  {
-    "command": [
-      "/usr/bin/nautilus"
-    ],
-    "working_directory": "/home/heisenberg"
   }
 ]

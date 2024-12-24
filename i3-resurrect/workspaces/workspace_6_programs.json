@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "command": [
+      "/usr/bin/alacritty",
+      "-e",
+      "ncmpcpp"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

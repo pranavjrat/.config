@@ -22,7 +22,7 @@ style = "Regular"
 
 [window]
 decorations = "Transparent" 
-opacity = 0.9
+opacity = 0.5
 blur = true
 dynamic_title = true
 padding.x = 10

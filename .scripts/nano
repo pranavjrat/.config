@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Capture a screenshot
+scrot /tmp/screenshot.png
+
+# Blur the screenshot
+convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
+
+# Lock the screen with the blurred screenshot
+i3lock -i /tmp/screenshotblur.png
+
+# Remove the temporary screenshot images
+rm /tmp/screenshot.png /tmp/screenshotblur.png
+
+# Exit i3 after the lock screen is dismissed
+i3-msg exit
+
