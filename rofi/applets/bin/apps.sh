@@ -24,7 +24,7 @@ fi
 # CMDs (add your apps here)
 term_cmd='alacritty'
 file_cmd='nautilus'
-text_cmd='alacritty -e nvim'
+text_cmd='obsidian'
 web_cmd='firefox'
 music_cmd='alacritty -e ncmpcpp'
 

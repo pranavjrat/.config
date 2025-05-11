@@ -36,6 +36,9 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# For dark theme
+exec --no-startup-id /usr/lib/gsd-xsettings
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -296,15 +299,15 @@ bindsym $mod+Shift+s exec --no-startup-id ~/.scripts/save_workspaces.sh
 
 # Restore workspace mode.
 mode "restore" {
-  bindsym 1 exec $i3_resurrect restore -w 1 --programs-only
-  bindsym 2 exec $i3_resurrect restore -w 2 --programs-only
-  bindsym 3 exec $i3_resurrect restore -w 3 --programs-only
-  bindsym 4 exec $i3_resurrect restore -w 4 --programs-only
-  bindsym 5 exec $i3_resurrect restore -w 5 --programs-only
-  bindsym 6 exec $i3_resurrect restore -w 6 --programs-only
-  bindsym 7 exec $i3_resurrect restore -w 7 --programs-only
-  bindsym 8 exec $i3_resurrect restore -w 8 --programs-only
-  bindsym 9 exec $i3_resurrect restore -w 9 --programs-only
+  bindsym 1 exec --no-startup-id $i3_resurrect restore -w 1 --programs-only
+  bindsym 2 exec --no-startup-id $i3_resurrect restore -w 2 --programs-only
+  bindsym 3 exec --no-startup-id $i3_resurrect restore -w 3 --programs-only
+  bindsym 4 exec --no-startup-id $i3_resurrect restore -w 4 --programs-only
+  bindsym 5 exec --no-startup-id $i3_resurrect restore -w 5 --programs-only
+  bindsym 6 exec --no-startup-id $i3_resurrect restore -w 6 --programs-only
+  bindsym 7 exec --no-startup-id $i3_resurrect restore -w 7 --programs-only
+  bindsym 8 exec --no-startup-id $i3_resurrect restore -w 8 --programs-only
+  bindsym 9 exec --no-startup-id $i3_resurrect restore -w 9 --programs-only
 
   # Back to normal: Enter, Escape, or n
   bindsym Return mode "default"
@@ -352,4 +355,6 @@ bindsym $mod+d exec rofi -show combi
 
 bindsym Mod4+d exec ~/.config/rofi/applets/bin/apps.sh
 
+# Toggle Polybar visibility
+bindsym $mod+Shift+h exec pkill polybar
 
