@@ -22,11 +22,11 @@ elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
 fi
 
 # CMDs (add your apps here)
-term_cmd='alacritty'
+term_cmd='kitty'
 file_cmd='nautilus'
 text_cmd='obsidian'
 web_cmd='firefox'
-music_cmd='alacritty -e ncmpcpp'
+music_cmd='kitty -e ncmpcpp'
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`

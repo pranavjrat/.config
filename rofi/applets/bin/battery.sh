@@ -107,9 +107,9 @@ run_cmd() {
     elif [[ "$1" == '--opt2' ]]; then
         notify-send -u low "$ICON_CHRG Status : $status"
     elif [[ "$1" == '--opt3' ]]; then
-        alacritty -e auto-cpufreq --stats
+        kitty -e auto-cpufreq --stats
     elif [[ "$1" == '--opt4' ]]; then
-        alacritty -e auto-cpufreq --monitor
+        kitty -e auto-cpufreq --monitor
     fi
 }
 
