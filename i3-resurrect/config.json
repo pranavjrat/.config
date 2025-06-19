@@ -4,9 +4,72 @@
     {
       "class": "Gnome-terminal",
       "command": "gnome-terminal"
+    },
+    {
+      "class": "kitty",
+      "command": "kitty"
+    },
+    {
+      "class": "Alacritty",
+      "command": "alacritty"
+    },
+    {
+      "class": "firefox",
+      "command": "firefox --new-window"
+    },
+    {
+      "class": "Firefox",
+      "command": "firefox --new-window"
+    },
+    {
+      "class": "obsidian",
+      "command": "obsidian"
+    },
+    {
+      "class": "Obsidian",
+      "command": "obsidian"
+    },
+    {
+      "class": "vlc",
+      "command": "vlc"
+    },
+    {
+      "class": "VLC media player",
+      "command": "vlc"
+    },
+    {
+      "class": "Vlc",
+      "command": "vlc"
+    },
+    {
+      "class": "vmware",
+      "command": "vmware-workstation"
+    },
+    {
+      "class": "Vmware",
+      "command": "vmware-workstation"
+    },
+    {
+      "class": "VMware Workstation",
+      "command": "vmware-workstation"
+    },
+    {
+      "class": "easyeffects",
+      "command": "easyeffects"
+    },
+    {
+      "class": "EasyEffects",
+      "command": "easyeffects"
+    },
+    {
+      "class": "com.github.wwmm.easyeffects",
+      "command": "easyeffects"
     }
   ],
-  "window_swallow_criteria": {},
+  "window_swallow_criteria": {
+    "firefox": ["--new-window"],
+    "Firefox": ["--new-window"]
+  },
   "terminals": [
     "Kitty",
     "Gnome-terminal",
