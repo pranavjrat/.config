@@ -13,7 +13,7 @@
   "marks": [],
   "name": "1",
   "orientation": "horizontal",
-  "percent": 0.11479591836734693,
+  "percent": 0.19511616880037924,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -28,13 +28,40 @@
         "x": 0,
         "y": 0,
         "width": 1918,
-        "height": 1041
+        "height": 1078
       },
       "layout": "splith",
       "marks": [],
-      "name": "~/Documents",
+      "name": "sudo nvim ./",
       "orientation": "none",
-      "percent": 1.0,
+      "percent": 0.5,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {
+          "class": "^kitty$",
+          "instance": "^kitty$"
+        }
+      ]
+    },
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 958,
+        "height": 1026
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "~/.config",
+      "orientation": "none",
+      "percent": 0.5,
       "scratchpad_state": "none",
       "sticky": false,
       "type": "con",

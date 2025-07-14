@@ -1,13 +1,13 @@
 [
   {
     "command": [
-      "kitty"
+      "obsidian"
     ],
     "working_directory": "/home/heisenberg"
   },
   {
     "command": [
-      "kitty"
+      "/usr/bin/nautilus"
     ],
     "working_directory": "/home/heisenberg"
   }

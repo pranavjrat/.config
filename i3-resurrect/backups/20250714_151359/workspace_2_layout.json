@@ -11,9 +11,9 @@
   },
   "layout": "splith",
   "marks": [],
-  "name": "4",
+  "name": "2",
   "orientation": "horizontal",
-  "percent": 0.16002844950213357,
+  "percent": 0.11479591836734693,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -27,12 +27,12 @@
       "geometry": {
         "x": 0,
         "y": 0,
-        "width": 903,
-        "height": 1022
+        "width": 1918,
+        "height": 1041
       },
       "layout": "splith",
       "marks": [],
-      "name": "i3 keybinding issues \u2014 Zen Browser",
+      "name": "~/Documents",
       "orientation": "none",
       "percent": 1.0,
       "scratchpad_state": "none",
@@ -40,7 +40,10 @@
       "type": "con",
       "workspace_layout": "default",
       "swallows": [
-        {}
+        {
+          "class": "^kitty$",
+          "instance": "^kitty$"
+        }
       ]
     }
   ]

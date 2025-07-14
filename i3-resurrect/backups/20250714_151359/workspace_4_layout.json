@@ -13,7 +13,7 @@
   "marks": [],
   "name": "4",
   "orientation": "horizontal",
-  "percent": 0.16002844950213357,
+  "percent": 0.15306122448979595,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -27,12 +27,12 @@
       "geometry": {
         "x": 0,
         "y": 0,
-        "width": 903,
-        "height": 1022
+        "width": 958,
+        "height": 1041
       },
       "layout": "splith",
       "marks": [],
-      "name": "i3 keybinding issues \u2014 Zen Browser",
+      "name": "Zen Browser",
       "orientation": "none",
       "percent": 1.0,
       "scratchpad_state": "none",
