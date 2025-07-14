@@ -1,0 +1,27 @@
+[
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "/opt/postman/app/postman",
+      "--no-sandbox"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

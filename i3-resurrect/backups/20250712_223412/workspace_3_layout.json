@@ -1,0 +1,47 @@
+{
+  "border": "normal",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 1,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "3",
+  "orientation": "horizontal",
+  "percent": 0.16666666666666669,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 960,
+        "y": 0,
+        "width": 958,
+        "height": 1041
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "(67) YouTube \u2014 Zen Browser",
+      "orientation": "none",
+      "percent": 1.0,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {}
+      ]
+    }
+  ]
+}

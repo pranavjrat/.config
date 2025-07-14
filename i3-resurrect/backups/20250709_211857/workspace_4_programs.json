@@ -1,0 +1,15 @@
+[
+  {
+    "command": [
+      "zen-browser",
+      "--new-window"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "/usr/bin/nm-applet"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

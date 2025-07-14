@@ -1,18 +1,25 @@
-  return {
-	"nvimtools/none-ls.nvim",
-	config = function()
-		local null_ls = require("null-ls")
-		null_ls.setup({
-              autostart = true,
-			sources = {
-				null_ls.builtins.formatting.stylua, --for lua
-				null_ls.builtins.formatting.prettier, --for formatting
-				null_ls.builtins.formatting.black, --for python
-				null_ls.builtins.formatting.isort, --for formatting
-			--	null_ls.builtins.diagnostics.eslint_d, --for linting
-			},
-		})
+return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
 
-		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
-	end,
+    null_ls.setup({
+      -- autostart is enabled by default, no need for autostart = true
+      sources = {
+        -- Formatters
+        null_ls.builtins.formatting.stylua,       -- Lua
+        null_ls.builtins.formatting.prettier,     -- JS/TS/HTML/CSS/etc.
+        null_ls.builtins.formatting.black,        -- Python (PEP8)
+        null_ls.builtins.formatting.isort,        -- Python import sorter
+        -- Linters (uncomment if you want)
+        -- null_ls.builtins.diagnostics.eslint_d, -- JS/TS linter
+      },
+    })
+
+    -- Keymap for formatting
+    vim.keymap.set("n", "<leader>gf", function()
+      vim.lsp.buf.format({ async = true })
+    end, { desc = "LSP Format buffer" })
+  end,
 }
+

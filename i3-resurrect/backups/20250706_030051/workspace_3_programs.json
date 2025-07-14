@@ -1,0 +1,23 @@
+[
+  {
+    "command": [
+      "zen-browser",
+      "--new-window"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "firefox",
+      "--new-window"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "/usr/bin/qbittorrent",
+      "magnet:?xt=urn:btih:F3E282E1E8CC4EE7267022A8139FFD37AB5CED0A&dn=Tame%20Impala%20-%20Currents%20(2015)%2024-44.1%20FLAC-BBM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

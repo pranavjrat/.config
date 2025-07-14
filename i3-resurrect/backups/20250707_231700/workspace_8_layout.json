@@ -1,0 +1,50 @@
+{
+  "border": "normal",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 1,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "8",
+  "orientation": "horizontal",
+  "percent": 0.12792397660818713,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1918,
+        "height": 1041
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "Superheroes \u2014 Elisa",
+      "orientation": "none",
+      "percent": 1.0,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {
+          "class": "^elisa$",
+          "instance": "^elisa$"
+        }
+      ]
+    }
+  ]
+}

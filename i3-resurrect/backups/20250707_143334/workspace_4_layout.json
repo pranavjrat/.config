@@ -1,0 +1,71 @@
+{
+  "border": "normal",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 1,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "4",
+  "orientation": "horizontal",
+  "percent": 0.10907504363001744,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 958,
+        "height": 1041
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "Claude \u2014 Zen Browser",
+      "orientation": "none",
+      "percent": 0.5,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {}
+      ]
+    },
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 710,
+        "y": 265,
+        "width": 958,
+        "height": 1041
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": "Sign in \u2013 Google accounts \u2014 Zen Browser",
+      "orientation": "none",
+      "percent": 0.5,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "swallows": [
+        {}
+      ]
+    }
+  ]
+}

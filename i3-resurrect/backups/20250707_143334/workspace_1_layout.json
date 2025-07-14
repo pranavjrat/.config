@@ -1,0 +1,127 @@
+{
+  "border": "normal",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 1,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "1",
+  "orientation": "horizontal",
+  "percent": 0.10763984568751721,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "normal",
+      "current_border_width": -1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "layout": "tabbed",
+      "marks": [],
+      "name": null,
+      "orientation": "horizontal",
+      "percent": 1.0,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "nodes": [
+        {
+          "border": "pixel",
+          "current_border_width": 1,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 1918,
+            "height": 1041
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "psql -U postgres -d HGFAMSDB",
+          "orientation": "none",
+          "percent": 0.3333333333333333,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^kitty$",
+              "instance": "^kitty$"
+            }
+          ]
+        },
+        {
+          "border": "pixel",
+          "current_border_width": 1,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 1,
+            "y": 28,
+            "width": 1918,
+            "height": 1014
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "http://localhost:5100/api/masters/getstates - My Workspace",
+          "orientation": "none",
+          "percent": 0.3333333333333333,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Postman$",
+              "instance": "^postman$"
+            }
+          ]
+        },
+        {
+          "border": "pixel",
+          "current_border_width": 1,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 958,
+            "height": 1041
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "~/Documents/HG",
+          "orientation": "none",
+          "percent": 0.3333333333333333,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^kitty$",
+              "instance": "^kitty$"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

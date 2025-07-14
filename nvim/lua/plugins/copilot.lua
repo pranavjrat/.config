@@ -14,8 +14,10 @@ return {
     vim.keymap.set('n', '<leader>cd', ':Copilot disable<CR>', { noremap = true, silent = true })
     
     -- Accept suggestion with Ctrl-Y in insert mode
-    vim.cmd[[imap <silent><script><expr> <C-I> copilot#Accept("\<CR>")]]
+    vim.cmd[[imap <silent><script><expr> <C-Y> copilot#Accept("\<CR>")]]
     
+
+
     -- Optional: See next suggestion with Alt-] in insert mode
     vim.cmd[[imap <silent> <M-]> <Plug>(copilot-next)]]
     -- Optional: See previous suggestion with Alt-[ in insert mode

@@ -1,0 +1,21 @@
+[
+  {
+    "command": [
+      "obsidian"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "/usr/bin/nautilus"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "/usr/bin/gnome-disks",
+      "--gapplication-service"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

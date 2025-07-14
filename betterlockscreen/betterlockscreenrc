@@ -1,0 +1,48 @@
+# Betterlockscreen configuration
+# Colors (Catppuccin theme)
+
+# Background
+background='#1e1e2e'
+
+# Ring colors
+ring='#89b4fa'
+ringver='#a6e3a1'
+ringwrong='#f38ba8'
+
+# Inside colors
+inside='#313244'
+insidever='#313244'
+insidewrong='#313244'
+
+# Text colors
+text='#cdd6f4'
+textver='#a6e3a1'
+textwrong='#f38ba8'
+
+# Date and time colors
+date='#cdd6f4'
+time='#cdd6f4'
+
+# Separator color
+separator='#89b4fa'
+
+# Key highlight color
+keyhl='#fab387'
+
+# Backspace highlight color
+bshl='#f38ba8'
+
+# Layout color
+layout='#cdd6f4'
+
+# Font
+font='DejaVu Sans'
+
+# Display configuration
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur pixel dimpixel color)
+dim_level=0.4
+blur_level=0.8
+pixel_scale=0.05

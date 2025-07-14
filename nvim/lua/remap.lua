@@ -67,3 +67,19 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 -- Show diagnostics list in quickfix window
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 
+vim.keymap.set("n", "]f", function()
+  require("nvim-treesitter.textobjects.move").goto_next_start("@function.outer")
+end, { desc = "Next function start" })
+
+vim.keymap.set("n", "[f", function()
+  require("nvim-treesitter.textobjects.move").goto_previous_start("@function.outer")
+end, { desc = "Prev function start" })
+
+vim.keymap.set("n", "]F", function()
+  require("nvim-treesitter.textobjects.move").goto_next_end("@function.outer")
+end, { desc = "Next function end" })
+
+vim.keymap.set("n", "[F", function()
+  require("nvim-treesitter.textobjects.move").goto_previous_end("@function.outer")
+end, { desc = "Prev function end" })
+
