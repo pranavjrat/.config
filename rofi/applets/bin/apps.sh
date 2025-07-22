@@ -25,8 +25,8 @@ fi
 term_cmd='kitty'
 file_cmd='nautilus'
 text_cmd='obsidian'
-web_cmd='firefox'
-music_cmd='kitty -e ncmpcpp'
+web_cmd='zen-browser'
+music_cmd='elisa'
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`

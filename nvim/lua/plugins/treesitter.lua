@@ -1,101 +1,86 @@
 return {
   {
-    "williamboman/mason.nvim",
-    lazy = false,
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
     config = function()
-      require("mason").setup()
-    end,
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "pyright" }, -- Added pyright for Python
-        auto_install = true,
+      local configs = require("nvim-treesitter.configs")
+      
+      configs.setup({
+        ensure_installed = {
+          "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html",
+          "typescript", "python", "java", "kotlin", "scala", "json", "yaml", "xml",
+          "css", "scss", "bash", "dockerfile", "gitignore", "markdown", "sql", "groovy"
+        },
+        sync_install = false,
+        highlight = { 
+          enable = true,
+          additional_vim_regex_highlighting = false,
+        },
+        indent = { 
+          enable = true 
+        },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = "gnn",
+            node_incremental = "grn",
+            scope_incremental = "grc",
+            node_decremental = "grm",
+          },
+        },
+        textobjects = {
+          select = {
+            enable = true,
+            lookahead = true,
+            keymaps = {
+              ["af"] = "@function.outer",
+              ["if"] = "@function.inner",
+              ["ac"] = "@class.outer",
+              ["ic"] = "@class.inner",
+              ["aa"] = "@parameter.outer",
+              ["ia"] = "@parameter.inner",
+            },
+          },
+          move = {
+            enable = true,
+            set_jumps = true,
+            goto_next_start = {
+              ["]m"] = "@function.outer",
+              ["]]"] = "@class.outer",
+            },
+            goto_next_end = {
+              ["]M"] = "@function.outer",
+              ["]["] = "@class.outer",
+            },
+            goto_previous_start = {
+              ["[m"] = "@function.outer",
+              ["[["] = "@class.outer",
+            },
+            goto_previous_end = {
+              ["[M"] = "@function.outer",
+              ["[]"] = "@class.outer",
+            },
+          },
+        },
+      })
+      -- Java specific configurations
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = "java",
+        callback = function()
+          -- Set Java specific indentation
+          vim.opt_local.shiftwidth = 4
+          vim.opt_local.tabstop = 4
+          vim.opt_local.softtabstop = 4
+          vim.opt_local.expandtab = true
+          -- Set Java specific text width
+          vim.opt_local.textwidth = 120
+          vim.opt_local.colorcolumn = "120"
+        end,
       })
     end
   },
   {
-    "neovim/nvim-lspconfig",
-    lazy = false,
-    config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-      local lspconfig = require("lspconfig")
-
-      -- TypeScript
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities
-      })
-
-      -- HTML
-      lspconfig.html.setup({
-        capabilities = capabilities
-      })
-
-      -- Clangd
-      lspconfig.clangd.setup({
-        capabilities = capabilities
-      })
-
-      -- Lua
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-
-      -- TailwindCSS
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities
-      })
-
-      -- CSS
-      lspconfig.cssls.setup({
-        capabilities = capabilities
-      })
-
-      -- ESLint
-      lspconfig.eslint.setup({
-        capabilities = capabilities
-      })
-
-      -- JSON
-      lspconfig.jsonls.setup({
-        capabilities = capabilities
-      })
-
-      -- Python
-      lspconfig.pyright.setup({ -- Configuration for Python
-        capabilities = capabilities
-      })
-
-      -- Emmet
-      lspconfig.emmet_language_server.setup({
-        filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "tsx" },
-        init_options = {
-          includeLanguages = {},
-          excludeLanguages = {},
-          extensionsPath = {},
-          preferences = {},
-          showAbbreviationSuggestions = true,
-          showExpandedAbbreviation = "always",
-          showSuggestionsAsSnippets = false,
-          syntaxProfiles = {},
-          variables = {},
-        },
-      })
-
-      -- Keymaps
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-    end,
-  },
-  {
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set({ "n", "v" }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
-    end,
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
 }
-

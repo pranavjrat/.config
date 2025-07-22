@@ -1,0 +1,8 @@
+[
+  {
+    "command": [
+      "/opt/visual-studio-code/code"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

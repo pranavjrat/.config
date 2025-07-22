@@ -1,0 +1,268 @@
+# Enhanced Java snippets for JavaFX, JUnit, and Gradle development
+
+snippet class "Class definition"
+public class ${1:ClassName} {
+    ${0}
+}
+endsnippet
+
+snippet main "Main method"
+public static void main(String[] args) {
+    ${0}
+}
+endsnippet
+
+snippet constructor "Constructor"
+public ${1:ClassName}(${2:parameters}) {
+    ${0}
+}
+endsnippet
+
+snippet method "Method definition"
+${1:public} ${2:void} ${3:methodName}(${4:parameters}) {
+    ${0}
+}
+endsnippet
+
+snippet getter "Getter method"
+public ${1:Type} get${2:Property}() {
+    return this.${3:property};
+}
+endsnippet
+
+snippet setter "Setter method"
+public void set${1:Property}(${2:Type} ${3:property}) {
+    this.${4:property} = ${5:property};
+}
+endsnippet
+
+snippet for "For loop"
+for (int ${1:i} = 0; ${2:i} < ${3:length}; ${4:i}++) {
+    ${0}
+}
+endsnippet
+
+snippet fore "Enhanced for loop"
+for (${1:Type} ${2:item} : ${3:collection}) {
+    ${0}
+}
+endsnippet
+
+snippet if "If statement"
+if (${1:condition}) {
+    ${0}
+}
+endsnippet
+
+snippet ife "If-else statement"
+if (${1:condition}) {
+    ${2}
+} else {
+    ${0}
+}
+endsnippet
+
+snippet try "Try-catch block"
+try {
+    ${1}
+} catch (${2:Exception} ${3:e}) {
+    ${0}
+}
+endsnippet
+
+snippet sout "System.out.println"
+System.out.println(${0});
+endsnippet
+
+snippet souf "System.out.printf"
+System.out.printf("${1:format}", ${0});
+endsnippet
+
+snippet interface "Interface definition"
+public interface ${1:InterfaceName} {
+    ${0}
+}
+endsnippet
+
+snippet enum "Enum definition"
+public enum ${1:EnumName} {
+    ${0}
+}
+endsnippet
+
+# JavaFX snippets
+snippet javafx "JavaFX Application template"
+package ${1:com.example};
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class ${2:MainApp} extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        ${3:Label label = new Label("Hello JavaFX!");}
+        ${4:StackPane root = new StackPane(label);}
+        
+        Scene scene = new Scene(root, ${5:300}, ${6:250});
+        
+        primaryStage.setTitle("${7:JavaFX Application}");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+endsnippet
+
+snippet controller "JavaFX Controller"
+package ${1:com.example};
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class ${2:Controller} implements Initializable {
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        ${0}
+    }
+}
+endsnippet
+
+snippet button "JavaFX Button"
+Button ${1:button} = new Button("${2:Click Me}");
+${1:button}.setOnAction(e -> {
+    ${0}
+});
+endsnippet
+
+snippet scene "JavaFX Scene"
+Scene scene = new Scene(${1:root}, ${2:800}, ${3:600});
+endsnippet
+
+# JUnit 5 testing snippets
+snippet test5 "JUnit 5 test method"
+@Test
+void ${1:testMethodName}() {
+    // Arrange
+    ${2}
+    
+    // Act
+    ${3}
+    
+    // Assert
+    ${0}
+}
+endsnippet
+
+snippet testclass5 "JUnit 5 test class"
+package ${1:com.example};
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.*;
+
+class ${2:TestClass} {
+    
+    private ${3:ClassUnderTest} ${4:instance};
+    
+    @BeforeEach
+    void setUp() {
+        ${4:instance} = new ${3:ClassUnderTest}();
+    }
+    
+    @AfterEach
+    void tearDown() {
+        ${4:instance} = null;
+    }
+    
+    @Test
+    void ${5:testMethod}() {
+        // Arrange
+        ${6}
+        
+        // Act
+        ${7}
+        
+        // Assert
+        ${0}
+    }
+}
+endsnippet
+
+snippet assertEquals "assertEquals assertion"
+assertEquals(${1:expected}, ${2:actual});
+endsnippet
+
+snippet assertTrue "assertTrue assertion"
+assertTrue(${1:condition});
+endsnippet
+
+snippet assertFalse "assertFalse assertion"
+assertFalse(${1:condition});
+endsnippet
+
+snippet assertThrows "assertThrows assertion"
+assertThrows(${1:Exception.class}, () -> {
+    ${0}
+});
+endsnippet
+
+snippet beforeeach "BeforeEach method"
+@BeforeEach
+void setUp() {
+    ${0}
+}
+endsnippet
+
+snippet aftereach "AfterEach method"
+@AfterEach
+void tearDown() {
+    ${0}
+}
+endsnippet
+
+# Legacy JUnit 4 snippets (for compatibility)
+snippet test "JUnit test method"
+@Test
+public void ${1:testMethodName}() {
+    ${0}
+}
+endsnippet
+
+snippet before "JUnit before method"
+@Before
+public void ${1:setUp}() {
+    ${0}
+}
+endsnippet
+
+snippet after "JUnit after method"
+@After
+public void ${1:tearDown}() {
+    ${0}
+}
+endsnippet
+
+# Common patterns
+snippet lambda "lambda expression"
+(${1:param}) -> {
+    ${0}
+}
+endsnippet
+
+snippet stream "stream operation"
+${1:collection}.stream()
+    .${2:filter(item -> )}
+    .${3:map(item -> )}
+    .collect(Collectors.${4:toList()});
+endsnippet

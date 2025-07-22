@@ -15,7 +15,7 @@ if command -v playerctl &> /dev/null; then
             echo "▶"
         fi
     elif [ "$status" = "Paused" ]; then
-        echo "⏸"
+        echo "⏸" 
     else
         echo "⏹"
     fi

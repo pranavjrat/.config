@@ -15,15 +15,14 @@ return {
           "emmet_language_server", -- Emmet Language Server
           "emmet_ls",              -- Emmet LS
           "eslint",                -- ESLint LSP
-          "firefox-debug-adapter", -- Firefox Debug Adapter
           "html",                  -- HTML LSP
-          "js-debug-adapter",      -- JS Debug Adapter
           "jsonls",                -- JSON LSP
           "lua_ls",                -- Lua Language Server
-          "node-debug2-adapter",   -- Node Debug Adapter
           "pyright",               -- Python LSP
           "tailwindcss",           -- TailwindCSS Language Server
           "ts_ls",                 -- TypeScript LSP
+          "jdtls",                 -- Java LSP
+          "kotlin_language_server", -- Kotlin LSP
         },
         auto_install = true,
       })
@@ -36,32 +35,92 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       local lspconfig = require("lspconfig")
+      
+      -- Add performance flags for all LSP servers
+      local default_flags = {
+        debounce_text_changes = 300,
+        allow_incremental_sync = true,
+      }
+      
       lspconfig.ts_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
+        settings = {
+          typescript = {
+            inlayHints = {
+              includeInlayParameterNameHints = "none",
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayFunctionParameterTypeHints = false,
+              includeInlayVariableTypeHints = false,
+              includeInlayPropertyDeclarationTypeHints = false,
+              includeInlayFunctionLikeReturnTypeHints = false,
+              includeInlayEnumMemberValueHints = false,
+            }
+          },
+          javascript = {
+            inlayHints = {
+              includeInlayParameterNameHints = "none",
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayFunctionParameterTypeHints = false,
+              includeInlayVariableTypeHints = false,
+              includeInlayPropertyDeclarationTypeHints = false,
+              includeInlayFunctionLikeReturnTypeHints = false,
+              includeInlayEnumMemberValueHints = false,
+            }
+          }
+        }
       })
       lspconfig.html.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
       })
       lspconfig.clangd.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
+        cmd = { "clangd", "--background-index=false", "--clang-tidy=false" }  -- Disable resource-heavy features
       })
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" },
+            },
+            workspace = {
+              library = vim.api.nvim_get_runtime_file("", true),
+              checkThirdParty = false,  -- Disable third party checking
+            },
+            telemetry = {
+              enable = false,
+            },
+            hint = {
+              enable = false,  -- Disable hints to save resources
+            },
+          }
+        }
       })
       lspconfig.tailwindcss.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
       })
       lspconfig.cssls.setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
       }
       lspconfig.eslint.setup {
-        capabilities = capabilities
-      }
-      lspconfig.html.setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
+        settings = {
+          workingDirectory = { mode = "auto" },
+          codeActionOnSave = {
+            enable = false,  -- Disable auto-fix on save to reduce CPU
+          }
+        }
       }
       lspconfig.jsonls.setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        flags = default_flags,
       }
       lspconfig.emmet_language_server.setup({
         filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "tsx" },
@@ -88,10 +147,166 @@ return {
           variables = {},
         },
       })
+      
+      -- Kotlin LSP configuration with performance optimizations
+      lspconfig.kotlin_language_server.setup({
+        capabilities = capabilities,
+        settings = {
+          kotlin = {
+            compiler = {
+              jvm = {
+                target = "17"
+              }
+            },
+            completion = {
+              snippets = {
+                enabled = true
+              }
+            },
+            linting = {
+              debounceTime = 500  -- Increased debounce to reduce CPU usage
+            },
+            indexing = {
+              enabled = true
+            }
+          }
+        },
+        flags = {
+          debounce_text_changes = 300,  -- Reduce frequent updates
+        },
+        init_options = {
+          storagePath = vim.fn.stdpath("cache") .. "/kotlin_ls"
+        }
+      })
+      
+      -- Enhanced Java LSP configuration for JavaFX and Gradle with performance optimizations
+      lspconfig.jdtls.setup({
+        capabilities = capabilities,
+        cmd = { vim.fn.stdpath('config') .. '/jdtls-wrapper.sh' },
+        filetypes = { 'java' },
+        single_file_support = true,
+        flags = {
+          debounce_text_changes = 300,  -- Reduce frequent updates
+          allow_incremental_sync = true,
+        },
+        settings = {
+          java = {
+            signatureHelp = { enabled = true },
+            format = { enabled = true },
+            completion = {
+              enabled = true,
+              maxResults = 50,  -- Limit completion results
+              favoriteStaticMembers = {
+                "org.junit.jupiter.api.Assertions.*",
+                "org.junit.jupiter.api.Assumptions.*",
+                "org.junit.jupiter.api.DynamicContainer.*",
+                "org.junit.jupiter.api.DynamicTest.*",
+                "org.mockito.Mockito.*",
+                "org.mockito.ArgumentMatchers.*",
+                "org.mockito.Answers.*",
+                "javafx.application.Application.*",
+                "javafx.scene.control.*",
+                "javafx.scene.layout.*"
+              },
+              filteredTypes = {
+                "com.sun.*",
+                "io.micrometer.shaded.*",
+                "java.awt.*",
+                "jdk.*",
+                "sun.*"
+              }
+            },
+            sources = {
+              organizeImports = {
+                starThreshold = 9999,
+                staticStarThreshold = 9999
+              }
+            },
+            codeGeneration = {
+              toString = {
+                template = "${object.className}{${member.name()}=${member.value}, ${otherMembers}}"
+              },
+              useBlocks = true
+            },
+            configuration = {
+              runtimes = {
+                {
+                  name = "JavaSE-17",
+                  path = "/usr/lib/jvm/java-17-openjdk/"
+                },
+                {
+                  name = "JavaSE-21",
+                  path = "/usr/lib/jvm/java-21-openjdk/"
+                }
+              }
+            },
+            eclipse = {
+              downloadSources = false,  -- Disable source download to save resources
+            },
+            maven = {
+              downloadSources = false,
+            },
+            implementationsCodeLens = {
+              enabled = false  -- Disable code lens to save CPU
+            },
+            referencesCodeLens = {
+              enabled = false
+            },
+            saveActions = {
+              organizeImports = false  -- Disable automatic organize imports
+            }
+          }
+        }
+      })
+      
+      -- Configure diagnostics to show by default with performance optimizations
+      vim.diagnostic.config({
+        virtual_text = {
+          enabled = true,
+          source = "if_many",  -- Show source only if multiple sources
+          prefix = '●',
+          spacing = 2,
+        },
+        signs = true,
+        underline = true,
+        update_in_insert = false,  -- Don't update diagnostics while typing
+        severity_sort = true,
+        float = {
+          border = 'rounded',
+          source = 'if_many',
+          header = '',
+          prefix = '',
+          max_width = 80,  -- Limit float width
+          max_height = 20,  -- Limit float height
+        },
+      })
+      
+      -- Configure diagnostic signs
+      local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+      for type, icon in pairs(signs) do
+        local hl = "DiagnosticSign" .. type
+        vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+      end
+      
+      -- Auto-show diagnostics on cursor hold with throttling
+      vim.api.nvim_create_autocmd({ "CursorHold" }, {  -- Removed CursorHoldI to reduce CPU usage
+        group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+        callback = function ()
+          -- Only show if there are diagnostics on the current line
+          local diagnostics = vim.diagnostic.get(0, { lnum = vim.fn.line('.') - 1 })
+          if #diagnostics > 0 then
+            vim.diagnostic.open_float(nil, {focus=false, scope="line"})
+          end
+        end
+      })
+      
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
+      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
+      vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
     end,
   },
   {

@@ -20,3 +20,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+
+-- Load LSP utilities for performance monitoring
+require("lsp-utils")

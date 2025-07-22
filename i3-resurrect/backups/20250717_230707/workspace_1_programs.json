@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  },
+  {
+    "command": [
+      "kitty"
+    ],
+    "working_directory": "/home/heisenberg"
+  }
+]

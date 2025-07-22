@@ -36,6 +36,81 @@ return {
                 }
             end
 
+            -- Enhanced Java debugging configuration
+            dap.configurations.java = {
+                {
+                    type = 'java',
+                    request = 'attach',
+                    name = "Debug (Attach) - Remote",
+                    hostName = "127.0.0.1",
+                    port = 5005,
+                },
+                {
+                    type = 'java',
+                    request = 'launch',
+                    name = "Debug Launch (2GB)",
+                    vmArgs = '' ..
+                        '-Xmx2g '
+                },
+                {
+                    type = 'java',
+                    request = 'launch',
+                    name = "Debug JavaFX Application",
+                    mainClass = function()
+                        return vim.fn.input('Main class: ', '', 'file')
+                    end,
+                    vmArgs = '' ..
+                        '-Xmx1g ' ..
+                        '--module-path /usr/share/openjfx/lib ' ..
+                        '--add-modules javafx.controls,javafx.fxml ',
+                    classPaths = {"${workspaceFolder}/build/classes"}
+                },
+                {
+                    type = 'java',
+                    request = 'launch',
+                    name = "Debug JUnit Test",
+                    mainClass = function()
+                        return vim.fn.input('Test class: ', '', 'file')
+                    end,
+                    vmArgs = '' ..
+                        '-Xmx512m ',
+                    classPaths = {"${workspaceFolder}/build/classes", "${workspaceFolder}/build/test-classes"}
+                }
+            }
+
+            -- Kotlin debugging configuration (uses same adapter as Java)
+            dap.configurations.kotlin = {
+                {
+                    type = 'java',
+                    request = 'attach',
+                    name = "Debug (Attach) - Remote",
+                    hostName = "127.0.0.1",
+                    port = 5005,
+                },
+                {
+                    type = 'java',
+                    request = 'launch',
+                    name = "Debug Kotlin Application",
+                    mainClass = function()
+                        return vim.fn.input('Main class: ', '', 'file')
+                    end,
+                    vmArgs = '' ..
+                        '-Xmx1g ',
+                    classPaths = {"${workspaceFolder}/build/classes/kotlin/main"}
+                },
+                {
+                    type = 'java',
+                    request = 'launch',
+                    name = "Debug Kotlin Test",
+                    mainClass = function()
+                        return vim.fn.input('Test class: ', '', 'file')
+                    end,
+                    vmArgs = '' ..
+                        '-Xmx512m ',
+                    classPaths = {"${workspaceFolder}/build/classes/kotlin/main", "${workspaceFolder}/build/classes/kotlin/test"}
+                }
+            }
+
 
             vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
             vim.keymap.set("n", "<Leader>dc", dap.continue, {})

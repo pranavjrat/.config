@@ -1,0 +1,291 @@
+# Enhanced Kotlin snippets for development
+
+snippet fun "Function definition"
+fun ${1:functionName}(${2:parameters}): ${3:ReturnType} {
+    ${0}
+}
+endsnippet
+
+snippet main "Main function"
+fun main() {
+    ${0}
+}
+endsnippet
+
+snippet class "Class definition"
+class ${1:ClassName} {
+    ${0}
+}
+endsnippet
+
+snippet data "Data class"
+data class ${1:ClassName}(
+    ${0}
+)
+endsnippet
+
+snippet object "Object definition"
+object ${1:ObjectName} {
+    ${0}
+}
+endsnippet
+
+snippet companion "Companion object"
+companion object {
+    ${0}
+}
+endsnippet
+
+snippet interface "Interface definition"
+interface ${1:InterfaceName} {
+    ${0}
+}
+endsnippet
+
+snippet enum "Enum class"
+enum class ${1:EnumName} {
+    ${0}
+}
+endsnippet
+
+snippet sealed "Sealed class"
+sealed class ${1:SealedClass} {
+    ${0}
+}
+endsnippet
+
+snippet if "If statement"
+if (${1:condition}) {
+    ${0}
+}
+endsnippet
+
+snippet ife "If-else statement"
+if (${1:condition}) {
+    ${2}
+} else {
+    ${0}
+}
+endsnippet
+
+snippet when "When expression"
+when (${1:expression}) {
+    ${2} -> ${3}
+    else -> ${0}
+}
+endsnippet
+
+snippet for "For loop"
+for (${1:item} in ${2:collection}) {
+    ${0}
+}
+endsnippet
+
+snippet fori "For loop with indices"
+for (${1:i} in 0 until ${2:size}) {
+    ${0}
+}
+endsnippet
+
+snippet try "Try-catch block"
+try {
+    ${1}
+} catch (e: ${2:Exception}) {
+    ${0}
+}
+endsnippet
+
+snippet println "Println statement"
+println(${0})
+endsnippet
+
+snippet print "Print statement"
+print(${0})
+endsnippet
+
+snippet val "Immutable variable"
+val ${1:name} = ${0}
+endsnippet
+
+snippet var "Mutable variable"
+var ${1:name} = ${0}
+endsnippet
+
+snippet const "Const variable"
+const val ${1:NAME} = ${0}
+endsnippet
+
+snippet lambda "Lambda expression"
+{ ${1:parameters} ->
+    ${0}
+}
+endsnippet
+
+snippet let "Let function"
+${1:variable}.let { ${2:it} ->
+    ${0}
+}
+endsnippet
+
+snippet apply "Apply function"
+${1:variable}.apply {
+    ${0}
+}
+endsnippet
+
+snippet also "Also function"
+${1:variable}.also { ${2:it} ->
+    ${0}
+}
+endsnippet
+
+snippet run "Run function"
+${1:variable}.run {
+    ${0}
+}
+endsnippet
+
+snippet with "With function"
+with(${1:variable}) {
+    ${0}
+}
+endsnippet
+
+snippet lazy "Lazy initialization"
+val ${1:property} by lazy {
+    ${0}
+}
+endsnippet
+
+snippet delegate "Property delegate"
+var ${1:property}: ${2:Type} by ${3:delegate}
+endsnippet
+
+snippet extension "Extension function"
+fun ${1:ReceiverType}.${2:functionName}(${3:parameters}): ${4:ReturnType} {
+    ${0}
+}
+endsnippet
+
+snippet override "Override function"
+override fun ${1:functionName}(${2:parameters}): ${3:ReturnType} {
+    ${0}
+}
+endsnippet
+
+snippet init "Init block"
+init {
+    ${0}
+}
+endsnippet
+
+snippet constructor "Secondary constructor"
+constructor(${1:parameters}) : this(${2:primaryParams}) {
+    ${0}
+}
+endsnippet
+
+snippet get "Custom getter"
+get() = ${0}
+endsnippet
+
+snippet set "Custom setter"
+set(value) {
+    ${0}
+}
+endsnippet
+
+snippet nullable "Nullable type"
+${1:Type}?
+endsnippet
+
+snippet notnull "Not null assertion"
+${1:variable}!!
+endsnippet
+
+snippet safe "Safe call"
+${1:variable}?.${0}
+endsnippet
+
+snippet elvis "Elvis operator"
+${1:variable} ?: ${0}
+endsnippet
+
+snippet list "List creation"
+listOf(${0})
+endsnippet
+
+snippet mlist "Mutable list"
+mutableListOf(${0})
+endsnippet
+
+snippet map "Map creation"
+mapOf(${1:key} to ${2:value})
+endsnippet
+
+snippet mmap "Mutable map"
+mutableMapOf(${1:key} to ${2:value})
+endsnippet
+
+snippet set "Set creation"
+setOf(${0})
+endsnippet
+
+snippet mset "Mutable set"
+mutableSetOf(${0})
+endsnippet
+
+snippet coroutine "Coroutine function"
+suspend fun ${1:functionName}(${2:parameters}): ${3:ReturnType} {
+    ${0}
+}
+endsnippet
+
+snippet launch "Launch coroutine"
+launch {
+    ${0}
+}
+endsnippet
+
+snippet async "Async coroutine"
+async {
+    ${0}
+}
+endsnippet
+
+snippet test "Test function (JUnit)"
+@Test
+fun `${1:test description}`() {
+    ${0}
+}
+endsnippet
+
+snippet before "Before test"
+@BeforeEach
+fun setUp() {
+    ${0}
+}
+endsnippet
+
+snippet after "After test"
+@AfterEach
+fun tearDown() {
+    ${0}
+}
+endsnippet
+
+snippet assertThat "AssertThat (if using assertion library)"
+assertThat(${1:actual}).${0}
+endsnippet
+
+snippet assertEquals "Equals assertion"
+assertEquals(${1:expected}, ${2:actual})
+endsnippet
+
+snippet assertTrue "True assertion"
+assertTrue(${1:condition})
+endsnippet
+
+snippet assertFalse "False assertion"
+assertFalse(${1:condition})
+endsnippet

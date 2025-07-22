@@ -214,11 +214,11 @@ bindsym $mod+r mode "resize"
 
 
 # Run the dynamic wallpaper script on startup
-exec --no-startup-id sh -c 'while true; do /home/heisenberg/Pictures/styli/styli.sh; sleep 7200; done'
+exec --no-startup-id sh -c 'while true; do /home/heisenberg/.scripts/randomWallpaper.sh; sleep 7200; done'
 
 
 # Keybinding to manually update the wallpaper
-bindsym Mod4+w exec "/home/heisenberg/Pictures/styli/styli.sh"
+bindsym Mod4+w exec "/home/heisenberg/.scripts/randomWallpaper.sh"
 
 
 
@@ -268,12 +268,15 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id xautolock -time 60 -locker "i3lock -c 000000"
-# Bind Mod1+L to lock the screen
-exec xautolock -detectsleep -time 5 -locker "~/.scripts/lock_screen.sh" \
+# Bind Mod4+L to lock the screen instantly with live blur effect
+exec xautolock -detectsleep -time 5 -locker "~/.scripts/lock_instant.sh" \
   -notify 30 \
   -notifier "notify-send -u critical -t 10000 -- 'locking screen in 30 seconds'"
 #bindsym Mod4+L exec caa -s && ~/.scripts/lock_screen.sh && ~/.scripts/save_workspaces.sh
-bindsym Mod4+L exec caa -s && betterlockscreen -l blur && ~/.scripts/save_workspaces.sh
+# Instant lock (primary - locks immediately with blur)
+bindsym Mod4+L exec --no-startup-id ~/.scripts/lock_instant.sh
+# Full lock with workspace save (Mod4+Shift+L)
+bindsym Mod4+Shift+L exec --no-startup-id caa -s && ~/.scripts/save_workspaces.sh && ~/.scripts/lock_instant.sh
 
 
 # Set window borders to pixel style with custom colors
