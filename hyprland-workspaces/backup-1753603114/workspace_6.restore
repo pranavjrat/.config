@@ -1,0 +1,14 @@
+# Window: New tab - Downloads - Obsidian v1.8.10 (Workspace: 6)
+# Address: 0x55f6f744fa90
+APP_CLASS="obsidian"
+APP_TITLE="New tab - Downloads - Obsidian v1.8.10"
+APP_COMMAND="electron"
+APP_FULL_COMMAND="/usr/lib/electron34/electron /usr/lib/obsidian/app.asar"
+WINDOW_X=83
+WINDOW_Y=33
+WINDOW_WIDTH=1804
+WINDOW_HEIGHT=1014
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=6
+

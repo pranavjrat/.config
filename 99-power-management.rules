@@ -1,0 +1,8 @@
+# Automatic power management based on AC adapter status
+# Place this file in /etc/udev/rules.d/
+
+# When AC adapter is unplugged (battery mode)
+SUBSYSTEM=="power_supply", ATTR{online}=="0", RUN+="/home/heisenberg/.config/scripts/battery-power-manager.sh"
+
+# When AC adapter is plugged in
+SUBSYSTEM=="power_supply", ATTR{online}=="1", RUN+="/home/heisenberg/.config/scripts/battery-power-manager.sh"

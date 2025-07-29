@@ -30,6 +30,9 @@ vim.opt.updatetime = 300  -- Increased from 50 to reduce CPU usage
 
 vim.opt.colorcolumn = "80"
 
+-- Clipboard configuration
+vim.opt.clipboard = "unnamedplus"
+
 -- Performance optimizations
 vim.opt.lazyredraw = true  -- Don't redraw during macros
 vim.opt.synmaxcol = 200    -- Limit syntax highlighting for long lines

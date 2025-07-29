@@ -1,0 +1,28 @@
+# Window: Just — Elisa (Workspace: 9)
+# Address: 0x560798ff7140
+APP_CLASS="org.kde.elisa"
+APP_TITLE="Just — Elisa"
+APP_COMMAND="elisa"
+APP_FULL_COMMAND="elisa"
+WINDOW_X=103
+WINDOW_Y=53
+WINDOW_WIDTH=869
+WINDOW_HEIGHT=974
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=9
+
+# Window: Easy Effects (Workspace: 9)
+# Address: 0x560798e59970
+APP_CLASS="com.github.wwmm.easyeffects"
+APP_TITLE="Easy Effects"
+APP_COMMAND="easyeffects"
+APP_FULL_COMMAND="easyeffects"
+WINDOW_X=998
+WINDOW_Y=84
+WINDOW_WIDTH=869
+WINDOW_HEIGHT=943
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=9
+

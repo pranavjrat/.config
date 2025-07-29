@@ -1,0 +1,14 @@
+# Window: 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43  — Zen Browser (Workspace: 4)
+# Address: 0x55f6f745f220
+APP_CLASS="zen"
+APP_TITLE="3b0bf7c9-37ba-476b-8b1a-1c90560cdf43  — Zen Browser"
+APP_COMMAND="zen-bin"
+APP_FULL_COMMAND="/opt/zen-browser-bin/zen-bin"
+WINDOW_X=83
+WINDOW_Y=33
+WINDOW_WIDTH=1804
+WINDOW_HEIGHT=1014
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=4
+

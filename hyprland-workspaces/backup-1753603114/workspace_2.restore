@@ -1,0 +1,14 @@
+# Window: app_restore_config.sh - .config - Visual Studio Code (Workspace: 2)
+# Address: 0x55f6f72eb630
+APP_CLASS="code"
+APP_TITLE="app_restore_config.sh - .config - Visual Studio Code"
+APP_COMMAND="code"
+APP_FULL_COMMAND="/opt/visual-studio-code/code"
+WINDOW_X=0
+WINDOW_Y=0
+WINDOW_WIDTH=1920
+WINDOW_HEIGHT=1080
+IS_FLOATING=false
+IS_FULLSCREEN=2
+WORKSPACE_ID=2
+

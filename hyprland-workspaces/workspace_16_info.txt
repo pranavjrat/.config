@@ -1,0 +1,9 @@
+workspace ID 16 (16) on monitor eDP-1:
+	monitorID: 0
+	windows: 0
+	hasfullscreen: 0
+	lastwindow: 0x0
+	lastwindowtitle: 
+	ispersistent: 0
+
+

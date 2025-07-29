@@ -78,10 +78,10 @@ run_cmd() {
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
 				bspc quit
-			elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
-				i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+			elif [[ "$XDG_CURRENT_DESKTOP" == 'Hyprland' ]]; then
+				hyprctl dispatch exit
 			fi
 		fi
 	else
@@ -104,8 +104,8 @@ case ${chosen} in
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
 			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
+		elif [[ "$XDG_CURRENT_DESKTOP" == 'Hyprland' ]]; then
+			caelestia shell lock lock
 		fi
         ;;
     $suspend)

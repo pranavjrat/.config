@@ -1,0 +1,9 @@
+workspace ID 4 (4) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798e31aa0
+	lastwindowtitle: 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | Config error fix — Zen Browser
+	ispersistent: 0
+
+

@@ -1,75 +1,27 @@
 <application>
-  <component name="FileEditorProviderManager">{}</component>
-  <component name="JdkInstallerHistory">
-    <option name="installedItems">
-      <installed-jdk>
-        <option name="fullText" value="Oracle OpenJDK 24.0.1" />
-        <option name="installDir" value="/home/heisenberg/.jdks/openjdk-24.0.1" />
-        <option name="sha256" value="5d78a1c35dc36b5435addd908f5bc8d714368635b5adc6fd0ea6784d4d00db83" />
-        <option name="url" value="https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_linux-x64_bin.tar.gz" />
-        <option name="versionText" value="24.0.1" />
-      </installed-jdk>
-    </option>
-  </component>
   <component name="LangManager">
     <option name="languageName" value="JAVA" />
   </component>
   <component name="NotRoamableUiSettings">
-    <option name="fontSize" value="15.0" />
-    <option name="ideScale" value="1.25" />
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
-    "InstalledPluginsSearchHistory": "/tag:Keymap",
-    "LAST_CALCULATED_COLOR_INDEX_KEY": "0",
-    "MarketplacePluginsSearchHistory": "/suggested\n/tag:Keymap\n/tag:Theme",
-    "NewProjectWizard.generateOnboardingTips": "true",
-    "NewProjectWizard.groupIdState": "org.example",
-    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
-    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
-    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
-    "RunOnceActivity.git.modal.commit.toggle": "true",
-    "SettingsSearchHistory": "zoom",
+    "NextRunPlatformUpdateBuild": "IU-251.27812.49",
+    "NextRunPlatformUpdateSelfBuild": "IU-251.26927.53",
+    "NextRunPlatformUpdateVersion": "2025.1.4.1",
     "ask.about.ctrl.y.shortcut.v2": "true",
-    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
-    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
-    "build.toolwindow.run.selection.state": "com.intellij.build.BuildTreeConsoleView",
-    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "Maven",
-    "com.intellij.ide.util.projectWizard.MultiWebTemplateNewProjectWizard$createTemplateStep$1.selectedStep": "React",
-    "create.project.preferred.importer": "Gradle",
-    "defaultJdkConfigured": "true",
-    "enter_selection_count": "4",
-    "evlsprt3.251": "3",
     "experimental.ui.on.first.startup": "true",
     "experimental.ui.used.version": "251.26927.53",
-    "file.gist.reindex.count": "1",
     "fileTypeChangedCounter": "1",
     "fontSizeToResetConsole": "13.0",
     "fontSizeToResetEditor": "13.0",
-    "got.it.tooltip.Plugins Auto-Update": "1",
-    "got.it.tooltip.settings.sync.in.settings": "1",
-    "ideavim.statistics.timestamp": "1753015131195",
     "input.method.disabler.muted": "true",
-    "installed.kotlin.plugin.version": "251.26927.53-IJ",
-    "jdk.selected.JAVA_MODULE": "openjdk-24",
-    "kotlin.updates.whats.new.shown.for": "2.1.10",
-    "last.imported.location": "/home/heisenberg/Documents/jabref",
-    "last_opened_file_path": "/home/heisenberg/Documents/jabref",
-    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
-    "migrated.non.roamable.values.from.general.settings": "true",
-    "onboarding.generation.number": "1",
-    "previousColorScheme": "_@user_One Dark Vivid Italic",
-    "project.wizard.group": "NPW.simple-project.Java",
+    "previousColorScheme": "_@user_Dark",
     "registry.to.advanced.settings.migration.build": "IU-251.26927.53",
-    "terminal.gen.one.option.visible": "false",
-    "ts.lib.d.ts.version": "5.7.3"
+    "terminal.is.new.user": "true"
   },
   "keyToStringList": {
-    "file.chooser.recent.files": [
-      "/home/heisenberg/Documents/jabref",
-      "/home/heisenberg/Documents/programs/java"
-    ],
     "fileTypeDetectors": [
       "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
       "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",

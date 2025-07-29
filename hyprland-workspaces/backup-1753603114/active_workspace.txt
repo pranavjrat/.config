@@ -1,0 +1,9 @@
+workspace ID 2 (2) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 1
+	lastwindow: 0x55f6f72eb630
+	lastwindowtitle: app_restore_config.sh - .config - Visual Studio Code
+	ispersistent: 0
+
+

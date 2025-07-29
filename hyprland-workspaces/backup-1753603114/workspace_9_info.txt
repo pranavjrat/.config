@@ -1,0 +1,21 @@
+workspace ID 9 (9) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560444895f90
+	lastwindowtitle: Learning To Fly — Elisa
+	ispersistent: 0
+
+workspace ID 10 (10) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560444777110
+	lastwindowtitle: 75167c99-8477-4ded-bd8a-3a49e06b0469 | (94) ROCKSTAR: Kun Faya Kun (Full Video Song) | Ranbir Kapoor | A.R. Rahman, Javed Ali, Mohit Chauhan - YouTube — Zen Browser
+	ispersistent: 0
+
+workspace ID 1 (1) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x5604446d5390

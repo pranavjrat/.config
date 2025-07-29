@@ -1,0 +1,65 @@
+workspace ID 1 (1) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798db0670
+	lastwindowtitle: nvim ./ ~/.config
+	ispersistent: 0
+
+workspace ID 9 (9) on monitor eDP-1:
+	monitorID: 0
+	windows: 2
+	hasfullscreen: 0
+	lastwindow: 0x560798ff7140
+	lastwindowtitle: Just — Elisa
+	ispersistent: 0
+
+workspace ID 5 (5) on monitor eDP-1:
+	monitorID: 0
+	windows: 2
+	hasfullscreen: 0
+	lastwindow: 0x560798f2d290
+	lastwindowtitle: .config.bak
+	ispersistent: 0
+
+workspace ID 10 (10) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798ff09c0
+	lastwindowtitle: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | caelestia-dots/caelestia: A very segsy rice — Zen Browser
+	ispersistent: 0
+
+workspace ID 3 (3) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798e43db0
+	lastwindowtitle: 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser
+	ispersistent: 0
+
+workspace ID 2 (2) on monitor eDP-1:
+	monitorID: 0
+	windows: 2
+	hasfullscreen: 1
+	lastwindow: 0x560798dc8570
+	lastwindowtitle: install-i3-packages.sh - .config - Visual Studio Code
+	ispersistent: 0
+
+workspace ID -98 (special:music) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x56079901dfa0
+	lastwindowtitle: Spotify Premium
+	ispersistent: 0
+
+workspace ID 4 (4) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798e31aa0
+	lastwindowtitle: 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | Config error fix — Zen Browser
+	ispersistent: 0
+
+

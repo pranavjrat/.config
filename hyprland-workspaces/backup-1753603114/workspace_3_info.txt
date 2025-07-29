@@ -1,0 +1,21 @@
+workspace ID 3 (3) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f7363c40
+	lastwindowtitle: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | X-Road® — X-Road® Technology Overview — Zen Browser
+	ispersistent: 0
+
+workspace ID 5 (5) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f73dc690
+	lastwindowtitle: Home
+	ispersistent: 0
+
+workspace ID 10 (10) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f7337d00

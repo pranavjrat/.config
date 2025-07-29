@@ -1,8 +1,0 @@
-[
-  {
-    "command": [
-      "/opt/intellij-idea-ultimate-edition/bin/idea"
-    ],
-    "working_directory": "/home/heisenberg"
-  }
-]

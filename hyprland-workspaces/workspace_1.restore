@@ -1,0 +1,14 @@
+# Window: nvim ./ ~/.config (Workspace: 1)
+# Address: 0x560798db0670
+APP_CLASS="foot"
+APP_TITLE="nvim ./ ~/.config"
+APP_COMMAND="foot"
+APP_FULL_COMMAND="foot"
+WINDOW_X=83
+WINDOW_Y=33
+WINDOW_WIDTH=1804
+WINDOW_HEIGHT=1014
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=1
+

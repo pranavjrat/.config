@@ -1,0 +1,34 @@
+# Power management kernel parameters for better battery life
+# Add these to your GRUB configuration
+
+# Intel GPU power management
+i915.enable_rc6=1
+i915.enable_fbc=1
+i915.enable_psr=1
+i915.disable_power_well=0
+
+# SATA power management
+ahci.mobile_lpm_policy=3
+
+# PCIe power management
+pcie_aspm=force
+pcie_aspm.policy=powersupersave
+
+# USB power management
+usbcore.autosuspend=1
+
+# CPU power management
+intel_pstate=passive
+processor.max_cstate=10
+
+# Network power management
+iwlwifi.power_save=1
+iwlmvm.power_scheme=3
+
+# Audio power management
+snd_hda_intel.power_save=1
+snd_hda_intel.power_save_controller=Y
+
+# Memory and disk power management
+vm.laptop_mode=5
+vm.dirty_writeback_centisecs=6000

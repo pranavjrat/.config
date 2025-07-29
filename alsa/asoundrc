@@ -1,0 +1,65 @@
+# ALSA configuration for Intel Tiger Lake
+# Fixes PCM and hardware access issues
+
+defaults.pcm.card 0
+defaults.ctl.card 0
+
+# PCM configuration
+pcm.!default {
+    type pulse
+    server "unix:/run/user/1000/pulse/native"
+}
+
+ctl.!default {
+    type pulse
+    server "unix:/run/user/1000/pulse/native"
+}
+
+# Hardware specific configuration for Intel Tiger Lake
+pcm.intel {
+    type hw
+    card 0
+    device 0
+    format S32_LE
+    rate 48000
+    channels 2
+    period_size 1024
+    buffer_size 4096
+}
+
+# Software mixing configuration
+pcm.dmixer {
+    type dmix
+    ipc_key 1024
+    slave {
+        pcm "hw:0,0"
+        period_time 0
+        period_size 1024
+        buffer_time 0
+        buffer_size 4096
+        rate 48000
+        format S32_LE
+        channels 2
+    }
+    bindings {
+        0 0
+        1 1
+    }
+}
+
+# Duplex configuration
+pcm.asymed {
+    type asym
+    playback.pcm "dmixer"
+    capture.pcm "hw:0,0"
+}
+
+# Pulse integration
+pcm.pulse {
+    type pulse
+    hint.description "PulseAudio Sound Server"
+}
+
+ctl.pulse {
+    type pulse
+}

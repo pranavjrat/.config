@@ -1,0 +1,21 @@
+workspace ID 6 (6) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f744fa90
+	lastwindowtitle: New tab - Downloads - Obsidian v1.8.10
+	ispersistent: 0
+
+workspace ID 4 (4) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f745f220
+	lastwindowtitle: 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | — Zen Browser
+	ispersistent: 0
+
+workspace ID -98 (special:music) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f7359230

@@ -1,0 +1,21 @@
+workspace ID 10 (10) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f7337d00
+	lastwindowtitle: 75167c99-8477-4ded-bd8a-3a49e06b0469 | caelestia-dots/caelestia: A very segsy rice — Zen Browser
+	ispersistent: 0
+
+workspace ID 6 (6) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f744fa90
+	lastwindowtitle: New tab - Downloads - Obsidian v1.8.10
+	ispersistent: 0
+
+workspace ID 4 (4) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55f6f745f220

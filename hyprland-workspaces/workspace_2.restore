@@ -1,0 +1,28 @@
+# Window: nvim ~/.config/hypr/ ~ (Workspace: 2)
+# Address: 0x560799039cb0
+APP_CLASS="foot"
+APP_TITLE="nvim ~/.config/hypr/ ~"
+APP_COMMAND="foot"
+APP_FULL_COMMAND="foot"
+WINDOW_X=103
+WINDOW_Y=53
+WINDOW_WIDTH=869
+WINDOW_HEIGHT=974
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=2
+
+# Window: install-i3-packages.sh - .config - Visual Studio Code (Workspace: 2)
+# Address: 0x560798dc8570
+APP_CLASS="code"
+APP_TITLE="install-i3-packages.sh - .config - Visual Studio Code"
+APP_COMMAND="code"
+APP_FULL_COMMAND="/opt/visual-studio-code/code"
+WINDOW_X=80
+WINDOW_Y=30
+WINDOW_WIDTH=1810
+WINDOW_HEIGHT=1020
+IS_FLOATING=false
+IS_FULLSCREEN=1
+WORKSPACE_ID=2
+

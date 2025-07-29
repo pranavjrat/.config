@@ -1,0 +1,28 @@
+# Window: 2025-07-18 - Notes - Obsidian v1.8.10 (Workspace: 5)
+# Address: 0x560798f07020
+APP_CLASS="obsidian"
+APP_TITLE="2025-07-18 - Notes - Obsidian v1.8.10"
+APP_COMMAND="electron"
+APP_FULL_COMMAND="/usr/lib/electron34/electron /usr/lib/obsidian/app.asar"
+WINDOW_X=998
+WINDOW_Y=53
+WINDOW_WIDTH=869
+WINDOW_HEIGHT=974
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=5
+
+# Window: .config.bak (Workspace: 5)
+# Address: 0x560798f2d290
+APP_CLASS="org.gnome.Nautilus"
+APP_TITLE=".config.bak"
+APP_COMMAND="nautilus"
+APP_FULL_COMMAND="nautilus"
+WINDOW_X=103
+WINDOW_Y=53
+WINDOW_WIDTH=869
+WINDOW_HEIGHT=974
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=5
+

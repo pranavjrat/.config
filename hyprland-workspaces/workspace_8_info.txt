@@ -1,0 +1,21 @@
+workspace ID 8 (8) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55d46de98880
+	lastwindowtitle: VLC media player
+	ispersistent: 0
+
+workspace ID 9 (9) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x0
+	lastwindowtitle: 
+	ispersistent: 0
+
+workspace ID 10 (10) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x55d46dde0cb0

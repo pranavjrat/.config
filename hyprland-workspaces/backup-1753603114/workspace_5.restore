@@ -1,0 +1,14 @@
+# Window: Home (Workspace: 5)
+# Address: 0x55f6f73dc690
+APP_CLASS="org.gnome.Nautilus"
+APP_TITLE="Home"
+APP_COMMAND="nautilus"
+APP_FULL_COMMAND="nautilus"
+WINDOW_X=83
+WINDOW_Y=33
+WINDOW_WIDTH=1804
+WINDOW_HEIGHT=1014
+IS_FLOATING=false
+IS_FULLSCREEN=0
+WORKSPACE_ID=5
+
