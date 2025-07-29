@@ -1,159 +1,3 @@
-Window 560798f07020 -> 2025-07-18 - Notes - Obsidian v1.8.10:
-	mapped: 1
-	hidden: 0
-	at: 998,53
-	size: 869,974
-	workspace: 5 (5)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: obsidian
-	title: 2025-07-18 - Notes - Obsidian v1.8.10
-	initialClass: obsidian
-	initialTitle: 2025-07-18 - Notes - Obsidian v1.8.10
-	pid: 4091
-	xwayland: 0
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 0
-	tags: 
-	swallowing: 0
-	focusHistoryID: 10
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
-Window 560798ff7140 -> Just — Elisa:
-	mapped: 1
-	hidden: 0
-	at: 103,53
-	size: 869,974
-	workspace: 9 (9)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: org.kde.elisa
-	title: Just — Elisa
-	initialClass: org.kde.elisa
-	initialTitle: Elisa
-	pid: 4805
-	xwayland: 0
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 0
-	tags: 
-	swallowing: 0
-	focusHistoryID: 6
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
-Window 560798e43db0 -> 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser:
-	mapped: 1
-	hidden: 0
-	at: 83,33
-	size: 1804,1014
-	workspace: 3 (3)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: zen
-	title: 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser
-	initialClass: zen
-	initialTitle: Zen Browser
-	pid: 13421
-	xwayland: 0
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 0
-	tags: 
-	swallowing: 0
-	focusHistoryID: 1
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
-Window 560798e59970 -> Easy Effects:
-	mapped: 1
-	hidden: 0
-	at: 998,84
-	size: 869,943
-	workspace: 9 (9)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: com.github.wwmm.easyeffects
-	title: Easy Effects
-	initialClass: com.github.wwmm.easyeffects
-	initialTitle: Easy Effects
-	pid: 12889
-	xwayland: 0
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 560798e59970
-	tags: 
-	swallowing: 0
-	focusHistoryID: 7
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
-Window 560798f2d290 -> .config.bak:
-	mapped: 1
-	hidden: 0
-	at: 103,53
-	size: 869,974
-	workspace: 5 (5)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: org.gnome.Nautilus
-	title: .config.bak
-	initialClass: org.gnome.Nautilus
-	initialTitle: Loading…
-	pid: 4412
-	xwayland: 0
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 0
-	tags: 
-	swallowing: 0
-	focusHistoryID: 9
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
-Window 56079901dfa0 -> Spotify Premium:
-	mapped: 1
-	hidden: 0
-	at: 103,53
-	size: 1764,974
-	workspace: -98 (special:music)
-	floating: 0
-	pseudo: 0
-	monitor: 0
-	class: Spotify
-	title: Spotify Premium
-	initialClass: Spotify
-	initialTitle: Spotify
-	pid: 30304
-	xwayland: 1
-	pinned: 0
-	fullscreen: 0
-	fullscreenClient: 0
-	grouped: 0
-	tags: 
-	swallowing: 0
-	focusHistoryID: 8
-	inhibitingIdle: 0
-	xdgTag: 
-	xdgDescription: 
-
 Window 560798e31aa0 -> 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | Config error fix — Zen Browser:
 	mapped: 1
 	hidden: 0
@@ -175,25 +19,51 @@ Window 560798e31aa0 -> 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | Config error fix �
 	grouped: 0
 	tags: 
 	swallowing: 0
+	focusHistoryID: 6
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 560798e43db0 -> 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser:
+	mapped: 1
+	hidden: 0
+	at: 80,30
+	size: 1810,1020
+	workspace: 3 (3)
+	floating: 0
+	pseudo: 0
+	monitor: 0
+	class: zen
+	title: 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser
+	initialClass: zen
+	initialTitle: Zen Browser
+	pid: 13421
+	xwayland: 0
+	pinned: 0
+	fullscreen: 1
+	fullscreenClient: 1
+	grouped: 0
+	tags: 
+	swallowing: 0
 	focusHistoryID: 3
 	inhibitingIdle: 0
 	xdgTag: 
 	xdgDescription: 
 
-Window 560798db0670 -> nvim ./ ~/.config:
+Window 560798f07020 -> 2025-07-18 - Notes - Obsidian v1.8.10:
 	mapped: 1
 	hidden: 0
-	at: 83,33
-	size: 1804,1014
-	workspace: 1 (1)
+	at: 103,53
+	size: 869,974
+	workspace: 5 (5)
 	floating: 0
 	pseudo: 0
 	monitor: 0
-	class: foot
-	title: nvim ./ ~/.config
-	initialClass: foot
-	initialTitle: foot
-	pid: 33796
+	class: obsidian
+	title: 2025-07-18 - Notes - Obsidian v1.8.10
+	initialClass: obsidian
+	initialTitle: 2025-07-18 - Notes - Obsidian v1.8.10
+	pid: 4091
 	xwayland: 0
 	pinned: 0
 	fullscreen: 0
@@ -201,25 +71,103 @@ Window 560798db0670 -> nvim ./ ~/.config:
 	grouped: 0
 	tags: 
 	swallowing: 0
-	focusHistoryID: 4
+	focusHistoryID: 7
 	inhibitingIdle: 0
 	xdgTag: 
 	xdgDescription: 
 
-Window 560799039cb0 -> nvim ~/.config/hypr/ ~:
+Window 560799242840 -> Spotify Premium:
+	mapped: 1
+	hidden: 0
+	at: 103,53
+	size: 1764,974
+	workspace: -98 (special:music)
+	floating: 0
+	pseudo: 0
+	monitor: 0
+	class: Spotify
+	title: Spotify Premium
+	initialClass: Spotify
+	initialTitle: Spotify
+	pid: 125547
+	xwayland: 1
+	pinned: 0
+	fullscreen: 0
+	fullscreenClient: 0
+	grouped: 0
+	tags: 
+	swallowing: 0
+	focusHistoryID: 10
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 560798e59970 -> Easy Effects:
 	mapped: 1
 	hidden: 0
 	at: 103,53
 	size: 869,974
-	workspace: 2 (2)
+	workspace: 9 (9)
 	floating: 0
 	pseudo: 0
 	monitor: 0
-	class: foot
-	title: nvim ~/.config/hypr/ ~
-	initialClass: foot
-	initialTitle: foot
-	pid: 23478
+	class: com.github.wwmm.easyeffects
+	title: Easy Effects
+	initialClass: com.github.wwmm.easyeffects
+	initialTitle: Easy Effects
+	pid: 164214
+	xwayland: 0
+	pinned: 0
+	fullscreen: 0
+	fullscreenClient: 0
+	grouped: 0
+	tags: 
+	swallowing: 0
+	focusHistoryID: 8
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 560798ff09c0 -> 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | (101) YouTube — Zen Browser:
+	mapped: 1
+	hidden: 0
+	at: 0,0
+	size: 1920,1080
+	workspace: 10 (10)
+	floating: 0
+	pseudo: 0
+	monitor: 0
+	class: zen
+	title: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | (101) YouTube — Zen Browser
+	initialClass: zen
+	initialTitle: Zen Browser
+	pid: 13421
+	xwayland: 0
+	pinned: 0
+	fullscreen: 2
+	fullscreenClient: 2
+	grouped: 0
+	tags: 
+	swallowing: 0
+	focusHistoryID: 9
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 560799443520 -> Music:
+	mapped: 1
+	hidden: 0
+	at: 998,53
+	size: 869,974
+	workspace: 5 (5)
+	floating: 0
+	pseudo: 0
+	monitor: 0
+	class: org.gnome.Nautilus
+	title: Music
+	initialClass: org.gnome.Nautilus
+	initialTitle: Loading…
+	pid: 4412
 	xwayland: 0
 	pinned: 0
 	fullscreen: 0
@@ -232,20 +180,46 @@ Window 560799039cb0 -> nvim ~/.config/hypr/ ~:
 	xdgTag: 
 	xdgDescription: 
 
-Window 560798ff09c0 -> 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | caelestia-dots/caelestia: A very segsy rice — Zen Browser:
+Window 56079948ac70 -> ~:
 	mapped: 1
 	hidden: 0
 	at: 83,33
 	size: 1804,1014
-	workspace: 10 (10)
+	workspace: 1 (1)
 	floating: 0
 	pseudo: 0
 	monitor: 0
-	class: zen
-	title: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | caelestia-dots/caelestia: A very segsy rice — Zen Browser
-	initialClass: zen
-	initialTitle: Zen Browser
-	pid: 13421
+	class: foot
+	title: ~
+	initialClass: foot
+	initialTitle: foot
+	pid: 309446
+	xwayland: 0
+	pinned: 0
+	fullscreen: 0
+	fullscreenClient: 0
+	grouped: 0
+	tags: 
+	swallowing: 0
+	focusHistoryID: 4
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 560798ff7140 -> Hey Jude — Elisa:
+	mapped: 1
+	hidden: 0
+	at: 998,53
+	size: 869,974
+	workspace: 9 (9)
+	floating: 0
+	pseudo: 0
+	monitor: 0
+	class: org.kde.elisa
+	title: Hey Jude — Elisa
+	initialClass: org.kde.elisa
+	initialTitle: Elisa
+	pid: 4805
 	xwayland: 0
 	pinned: 0
 	fullscreen: 0
@@ -258,24 +232,50 @@ Window 560798ff09c0 -> 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | caelestia-dots/cae
 	xdgTag: 
 	xdgDescription: 
 
-Window 560798dc8570 -> install-i3-packages.sh - .config - Visual Studio Code:
+Window 560799194680 -> fuzzel-file-finder.sh - .config - Visual Studio Code:
 	mapped: 1
 	hidden: 0
-	at: 80,30
-	size: 1810,1020
+	at: 83,33
+	size: 1804,1014
 	workspace: 2 (2)
 	floating: 0
 	pseudo: 0
 	monitor: 0
 	class: code
-	title: install-i3-packages.sh - .config - Visual Studio Code
+	title: fuzzel-file-finder.sh - .config - Visual Studio Code
 	initialClass: code
 	initialTitle: Visual Studio Code
-	pid: 23658
+	pid: 132820
 	xwayland: 0
 	pinned: 0
-	fullscreen: 1
-	fullscreenClient: 1
+	fullscreen: 0
+	fullscreenClient: 0
+	grouped: 0
+	tags: 
+	swallowing: 0
+	focusHistoryID: 1
+	inhibitingIdle: 0
+	xdgTag: 
+	xdgDescription: 
+
+Window 5607997370a0 -> rofi - Combi:
+	mapped: 1
+	hidden: 0
+	at: 640,337
+	size: 640,407
+	workspace: 2 (2)
+	floating: 1
+	pseudo: 0
+	monitor: 0
+	class: Rofi
+	title: rofi - Combi
+	initialClass: Rofi
+	initialTitle: rofi - Combi
+	pid: 327337
+	xwayland: 1
+	pinned: 0
+	fullscreen: 0
+	fullscreenClient: 0
 	grouped: 0
 	tags: 
 	swallowing: 0

@@ -1,7 +1,7 @@
-# Window: nvim ./ ~/.config (Workspace: 1)
-# Address: 0x560798db0670
+# Window: ~ (Workspace: 1)
+# Address: 0x56079948ac70
 APP_CLASS="foot"
-APP_TITLE="nvim ./ ~/.config"
+APP_TITLE="~"
 APP_COMMAND="foot"
 APP_FULL_COMMAND="foot"
 WINDOW_X=83

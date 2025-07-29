@@ -88,7 +88,7 @@ configuration {
 
     /*---------- File browser settings ----------*/
     filebrowser {
-        directory: "/home/heisenberg/Desktop";
+        directory: "/home/heisenberg";
         directories-first: true;
         sorting-method: "name";
     }

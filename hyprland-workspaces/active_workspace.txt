@@ -1,9 +1,9 @@
 workspace ID 2 (2) on monitor eDP-1:
 	monitorID: 0
 	windows: 2
-	hasfullscreen: 1
-	lastwindow: 0x560798dc8570
-	lastwindowtitle: install-i3-packages.sh - .config - Visual Studio Code
+	hasfullscreen: 0
+	lastwindow: 0x5607997370a0
+	lastwindowtitle: rofi - Combi
 	ispersistent: 0
 
 

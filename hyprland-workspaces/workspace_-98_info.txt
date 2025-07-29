@@ -2,16 +2,20 @@ workspace ID -98 (special:music) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
 	hasfullscreen: 0
-	lastwindow: 0x56079901dfa0
+	lastwindow: 0x560799242840
 	lastwindowtitle: Spotify Premium
 	ispersistent: 0
 
-workspace ID 4 (4) on monitor eDP-1:
+workspace ID 2 (2) on monitor eDP-1:
+	monitorID: 0
+	windows: 2
+	hasfullscreen: 0
+	lastwindow: 0x5607997370a0
+	lastwindowtitle: rofi - Combi
+	ispersistent: 0
+
+workspace ID 1 (1) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
 	hasfullscreen: 0
-	lastwindow: 0x560798e31aa0
-	lastwindowtitle: 3b0bf7c9-37ba-476b-8b1a-1c90560cdf43 | Config error fix — Zen Browser
-	ispersistent: 0
-
-
+	lastwindow: 0x56079948ac70

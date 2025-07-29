@@ -1,17 +1,21 @@
-workspace ID -97 (special:music) on monitor eDP-1:
+workspace ID -97 (special:sysmon) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
 	hasfullscreen: 0
-	lastwindow: 0x563a4c009640
-	lastwindowtitle: J. Cole - MIDDLE CHILD
+	lastwindow: 0x560799234660
+	lastwindowtitle: btop
 	ispersistent: 0
 
-workspace ID 3 (3) on monitor eDP-1:
+workspace ID 1 (1) on monitor eDP-1:
+	monitorID: 0
+	windows: 2
+	hasfullscreen: 0
+	lastwindow: 0x560799276520
+	lastwindowtitle: Volume Control
+	ispersistent: 0
+
+workspace ID 2 (2) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
 	hasfullscreen: 0
-	lastwindow: 0x563a4c092ff0
-	lastwindowtitle: 75167c99-8477-4ded-bd8a-3a49e06b0469 | Tree: Huffman Decoding | HackerRank — Zen Browser
-	ispersistent: 0
-
-
+	lastwindow: 0x56079948ac70

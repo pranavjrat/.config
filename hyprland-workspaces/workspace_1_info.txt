@@ -1,43 +1,31 @@
-workspace ID 1 (1) on monitor eDP-1:
-	monitorID: 0
-	windows: 1
-	hasfullscreen: 0
-	lastwindow: 0x560798db0670
-	lastwindowtitle: nvim ./ ~/.config
-	ispersistent: 0
-
-workspace ID 9 (9) on monitor eDP-1:
-	monitorID: 0
-	windows: 2
-	hasfullscreen: 0
-	lastwindow: 0x560798ff7140
-	lastwindowtitle: Just — Elisa
-	ispersistent: 0
-
-workspace ID 5 (5) on monitor eDP-1:
-	monitorID: 0
-	windows: 2
-	hasfullscreen: 0
-	lastwindow: 0x560798f2d290
---
 workspace ID 10 (10) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
-	hasfullscreen: 0
+	hasfullscreen: 1
 	lastwindow: 0x560798ff09c0
-	lastwindowtitle: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | caelestia-dots/caelestia: A very segsy rice — Zen Browser
+	lastwindowtitle: 0df89c8d-8731-4ecc-b82e-1e4c72c653cd | (101) YouTube — Zen Browser
 	ispersistent: 0
 
 workspace ID 3 (3) on monitor eDP-1:
 	monitorID: 0
 	windows: 1
-	hasfullscreen: 0
+	hasfullscreen: 1
 	lastwindow: 0x560798e43db0
 	lastwindowtitle: 75167c99-8477-4ded-bd8a-3a49e06b0469 | — Zen Browser
 	ispersistent: 0
 
-workspace ID 2 (2) on monitor eDP-1:
+workspace ID 4 (4) on monitor eDP-1:
 	monitorID: 0
-	windows: 2
-	hasfullscreen: 1
-	lastwindow: 0x560798dc8570
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x560798e31aa0
+--
+workspace ID 1 (1) on monitor eDP-1:
+	monitorID: 0
+	windows: 1
+	hasfullscreen: 0
+	lastwindow: 0x56079948ac70
+	lastwindowtitle: ~
+	ispersistent: 0
+
+
