@@ -1,0 +1,23 @@
+2025-08-01 07:07:01.348 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-01 07:07:01.348 [info] Using the Electron fetcher.
+2025-08-01 07:07:01.648 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-01 07:07:01.648 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-01 07:07:01.648 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-01 07:07:05.611 [info] Logged in as pranavjrat
+2025-08-01 07:07:06.739 [info] Got Copilot token for pranavjrat
+2025-08-01 07:07:14.879 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-01 07:07:14.896 [info] Registering default platform agent...
+2025-08-01 07:07:14.897 [info] activationBlocker from 'conversationFeature' took for 32ms
+2025-08-01 07:07:14.918 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-01 07:07:14.952 [info] activationBlocker from 'languageModelAccess' took for 84ms
+2025-08-01 07:07:15.911 [info] Fetched model metadata in 960ms c87a6157-88bd-469a-9821-0ee2652af867
+2025-08-01 07:07:56.798 [info] message 0 returned. finish reason: [stop]
+2025-08-01 07:07:56.798 [info] request done: requestId: [30a11d5c-bf4b-4aae-87dc-c1062b4b73ce] model deployment ID: []
+2025-08-01 07:07:56.799 [info] Latest entry: ccreq:latestrequest.copilotmd
+2025-08-01 07:07:56.800 [info] ccreq:d883fbec.copilotmd | success | gpt-4o-mini | 1905ms | [intentDetection]
+2025-08-01 07:08:08.414 [info] message 0 returned. finish reason: [stop]
+2025-08-01 07:08:08.414 [info] request done: requestId: [055174ca-973b-4dae-9c43-c0272cb3bb62] model deployment ID: []
+2025-08-01 07:08:08.415 [info] ccreq:02f98a7c.copilotmd | success | claude-sonnet-4 | 11581ms | [panel/unknown]
+2025-08-01 07:08:09.192 [info] message 0 returned. finish reason: [stop]
+2025-08-01 07:08:09.192 [info] request done: requestId: [e4c4893d-71d6-4aa5-a1d6-a24a92acfb18] model deployment ID: []
+2025-08-01 07:08:09.193 [info] ccreq:6ca3a552.copilotmd | success | gpt-4o-mini | 737ms | [title]

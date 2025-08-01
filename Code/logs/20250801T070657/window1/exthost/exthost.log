@@ -1,0 +1,13 @@
+2025-08-01 07:07:00.448 [info] Extension host with pid 39462 started
+2025-08-01 07:07:00.449 [info] Skipping acquiring lock for /home/heisenberg/.config/Code/User/workspaceStorage/a1a4f9d9e308234cfeb8ad526e8bc8b3.
+2025-08-01 07:07:00.561 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-08-01 07:07:00.606 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-01 07:07:00.639 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-08-01 07:07:01.330 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-08-01 07:07:01.448 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-08-01 07:07:01.603 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-01 07:07:01.897 [info] Eager extensions activated
+2025-08-01 07:07:01.944 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-01 07:07:01.948 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-01 07:07:01.984 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-08-01 07:07:04.501 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'

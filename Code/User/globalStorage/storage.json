@@ -6,23 +6,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/heisenberg/.config/hypr"
-            },
-            {
-                "folderUri": "file:///home/heisenberg/.config/quickshell/caelestia"
-            },
-            {
                 "folderUri": "file:///home/heisenberg/.config/quickshell/caelestia/config"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1753999031663"
-            },
-            {
-                "backupFolder": "1754002669072"
-            }
-        ]
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -31,10 +18,7 @@
             "file:///home/heisenberg/.config/quickshell/caelestia": "__default__profile__",
             "file:///home/heisenberg/.config/quickshell/caelestia/config": "__default__profile__"
         },
-        "emptyWindows": {
-            "1753999031663": "__default__profile__",
-            "1754002669072": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
@@ -71,10 +55,10 @@
             "folder": "file:///home/heisenberg/.config/quickshell/caelestia/config",
             "backupPath": "/home/heisenberg/.config/Code/Backups/56e02c64b0426629803735698cd5aee8",
             "uiState": {
-                "mode": 0,
+                "mode": 1,
                 "x": 0,
                 "y": 0,
-                "width": 960,
+                "width": 1920,
                 "height": 1080
             }
         },
