@@ -1,0 +1,59 @@
+2025-08-01 04:27:54.643 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-01 04:27:54.643 [info] Using the Electron fetcher.
+2025-08-01 04:27:54.643 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-01 04:27:54.643 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-01 04:27:54.643 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-01 04:27:54.942 [info] Logged in as pranavjrat
+2025-08-01 04:27:56.066 [info] Got Copilot token for pranavjrat
+2025-08-01 04:28:04.578 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-01 04:28:04.595 [info] Registering default platform agent...
+2025-08-01 04:28:04.596 [info] activationBlocker from 'conversationFeature' took for 32ms
+2025-08-01 04:28:04.608 [info] activationBlocker from 'languageModelAccess' took for 41ms
+2025-08-01 04:28:04.844 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-01 04:28:05.591 [info] Fetched model metadata in 983ms 63a8af85-6bde-464d-a1a8-08d6ed1b2742
+2025-08-01 04:31:04.069 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-01 04:31:04.069 [info] Using the Electron fetcher.
+2025-08-01 04:31:04.069 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-01 04:31:04.069 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-01 04:31:04.069 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-01 04:31:04.869 [info] Logged in as pranavjrat
+2025-08-01 04:31:06.044 [info] Got Copilot token for pranavjrat
+2025-08-01 04:31:14.217 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-01 04:31:14.233 [info] Registering default platform agent...
+2025-08-01 04:31:14.235 [info] activationBlocker from 'conversationFeature' took for 33ms
+2025-08-01 04:31:14.271 [info] activationBlocker from 'languageModelAccess' took for 66ms
+2025-08-01 04:31:14.281 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-01 04:31:15.008 [error] GithubCodeSearchService.getRemoteIndexState(caelestia-dots/shell). Failed to fetch indexing status. Response: 404. {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-08-01 04:31:15.268 [info] Fetched model metadata in 998ms 92c52536-9da8-4830-ac19-b718ab9611fe
+2025-08-01 04:35:54.258 [info] message 0 returned. finish reason: [stop]
+2025-08-01 04:35:54.258 [info] request done: requestId: [8589a459-7946-40f9-a7e5-abbecfe1d8dc] model deployment ID: []
+2025-08-01 04:35:54.259 [info] Latest entry: ccreq:latestrequest.copilotmd
+2025-08-01 04:35:54.260 [info] ccreq:5936ab20.copilotmd | success | gpt-4o-mini | 1523ms | [intentDetection]
+2025-08-01 04:35:59.149 [info] message 0 returned. finish reason: [stop]
+2025-08-01 04:35:59.149 [info] request done: requestId: [a2d19b35-a278-4460-be6b-d51dd3063242] model deployment ID: []
+2025-08-01 04:35:59.150 [info] ccreq:a191785e.copilotmd | success | gpt-4.1 | 4861ms | [panel/unknown]
+2025-08-01 04:35:59.831 [info] message 0 returned. finish reason: [stop]
+2025-08-01 04:35:59.831 [info] request done: requestId: [010cfb07-6c9a-4538-a44a-a827acf0b4f2] model deployment ID: []
+2025-08-01 04:35:59.832 [info] ccreq:bc161df9.copilotmd | success | gpt-4o-mini | 643ms | [title]
+2025-08-01 04:40:07.241 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-01 04:40:07.241 [info] Using the Electron fetcher.
+2025-08-01 04:40:07.241 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-01 04:40:07.241 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-01 04:40:07.241 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-01 04:40:07.650 [info] Logged in as pranavjrat
+2025-08-01 04:40:08.782 [info] Got Copilot token for pranavjrat
+2025-08-01 04:40:17.304 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-01 04:40:17.321 [info] Registering default platform agent...
+2025-08-01 04:40:17.324 [info] activationBlocker from 'conversationFeature' took for 35ms
+2025-08-01 04:40:17.354 [info] activationBlocker from 'languageModelAccess' took for 62ms
+2025-08-01 04:40:17.594 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-01 04:40:18.385 [info] Fetched model metadata in 1031ms 15e33c48-2209-4508-ae11-9f125e86bc3e
+2025-08-01 04:55:20.502 [info] Fetched model metadata in 1265ms 281cc95f-6f5b-47b2-b8f2-b27ac4839112
+2025-08-01 05:10:29.632 [info] Logged in as pranavjrat
+2025-08-01 05:10:30.983 [info] Got Copilot token for pranavjrat
+2025-08-01 05:10:30.991 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-08-01 05:10:31.034 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-01 05:40:31.518 [info] Logged in as pranavjrat
+2025-08-01 05:40:32.841 [info] Got Copilot token for pranavjrat
+2025-08-01 05:40:32.851 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-08-01 05:40:32.899 [info] BYOK: Copilot Chat known models list fetched successfully.

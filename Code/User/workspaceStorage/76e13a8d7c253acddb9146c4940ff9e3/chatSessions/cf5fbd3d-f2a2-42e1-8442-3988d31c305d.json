@@ -1,0 +1,1992 @@
+{
+  "version": 3,
+  "requesterUsername": "pranavjrat",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/149122738",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_bba62511-8647-45b3-9861-64197201958b",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 92
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 41
+            },
+            "text": "theere is binde = Alt, Tab, cyclenext, activewindow\nadd keybind to cycle through workspaecs ",
+            "kind": "text"
+          }
+        ],
+        "text": "theere is binde = Alt, Tab, cyclenext, activewindow\nadd keybind to cycle through workspaecs "
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "warning",
+          "content": {
+            "value": "You have exceeded your premium request allowance. We have automatically switched you to GPT-4.1 which is included with your plan. [Enable additional paid premium requests](command:chat.enablePremiumOverages) to continue using premium models.",
+            "isTrusted": {
+              "enabledCommands": [
+                "chat.enablePremiumOverages"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:chat.enablePremiumOverages": {
+                "$mid": 1,
+                "external": "command:chat.enablePremiumOverages",
+                "path": "chat.enablePremiumOverages",
+                "scheme": "command"
+              }
+            }
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Searching command and setting index....",
+            "uris": {}
+          }
+        },
+        {
+          "value": "To cycle through workspaces in Visual Studio Code, you can create a custom keybinding for the **Switch Window...** command. This command allows you to switch between open windows (workspaces).\n\n1. Open the Keyboard Shortcuts editor (`ctrl + k ctrl + s`).\n2. Search for \"Switch Window\".\n3. Add a keybinding such as `alt+tab` to the **Switch Window...** command.\n\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "workbench.action.quickOpen /13",
+            "id": "__vsc3d98c36e-b59a-4c86-942e-310a8013f0e0",
+            "title": "Show in Command Palette",
+            "arguments": [
+              "workbench.action.quickOpen /13"
+            ]
+          }
+        }
+      ],
+      "responseId": "response_8b86f4ea-5577-4e5d-a9fa-c732def6c323",
+      "result": {
+        "timings": {
+          "firstProgress": 9909,
+          "totalElapsed": 11233
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "To cycle through workspaces in Visual Studio Code, you can create a custom keybinding for the **Switch Window...** command. This command allows you to switch between open windows (workspaces).\n\n1. Open the Keyboard Shortcuts editor (`ctrl + k ctrl + s`).\n2. Search for \"Switch Window\".\n3. Add a keybinding such as `alt+tab` to the **Switch Window...** command.\n\n```json\n[\n\t{\n\t\t\"type\": \"command\",\n\t\t\"details\": {\n\t\t\t\"key\": \"workbench.action.switchWindow\"\n\t\t}\n\t}\n]\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "3670241a-8964-428a-a847-0343be139a0d"
+            }
+          ],
+          "modelMessageId": "27f52b0f-7375-4687-80ce-8b3becce7d30",
+          "responseId": "02b6b84b-4483-409d-a794-d5f0c1f14925",
+          "sessionId": "ca4eaea8-afea-4df2-a929-84737425084f",
+          "agentId": "github.copilot.vscode"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.vscode",
+        "description": "Ask questions about VS Code",
+        "metadata": {
+          "sampleRequest": "What is the command to open the integrated terminal?",
+          "themeIcon": {
+            "id": "vscode"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "vscode",
+        "fullName": "VS Code",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "search",
+            "description": "Generate query parameters for workspace search",
+            "sampleRequest": "Search for 'foo' in all files under my 'src' directory"
+          },
+          {
+            "name": "startDebugging",
+            "description": "Generate launch config and start debugging in VS Code (Experimental)",
+            "sampleRequest": "Attach to node app at port 9229",
+            "when": "config.github.copilot.chat.startDebugging.enabled"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "vscode_configuration_questions",
+            "description": "The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions.",
+            "examples": [
+              "Switch to light mode.",
+              "Keyboard shortcut to toggle terminal visibility.",
+              "Settings to enable minimap.",
+              "Whats new in the latest release?"
+            ]
+          },
+          {
+            "category": "configure_python_environment",
+            "description": "The user wants to set up their Python environment.",
+            "examples": [
+              "Create a virtual environment for my project."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999253119,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    },
+    {
+      "requestId": "request_561381f4-0e92-4173-b652-b2c54bef2bf1",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 91
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 40
+            },
+            "text": "theere is binde = Alt, Tab, cyclenext, activewindow\nadd keybind to cycle through workspaecs",
+            "kind": "text"
+          }
+        ],
+        "text": "theere is binde = Alt, Tab, cyclenext, activewindow\nadd keybind to cycle through workspaecs"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "directory",
+            "id": "file:///home/heisenberg/.config/hypr/hyprland",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland",
+              "path": "/home/heisenberg/.config/hypr/hyprland",
+              "scheme": "file"
+            },
+            "name": "hyprland"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Searching hyprland for \"Command or setting to add a keybinding to cycle through workspaces in Visual Studio Code.\"",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "pastTenseMessage": {
+            "value": "Searched hyprland for \"Command or setting to add a keybinding to cycle through workspaces in Visual Studio Code.\", 8 results",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "resultDetails": [
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/animations.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/animations.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/animations.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/colours.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/colours.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/colours.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/decoration.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/decoration.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/decoration.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/env.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/env.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/env.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/execs.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/execs.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/execs.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/keybinds.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/keybinds.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/keybinds.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/overrides.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/overrides.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/overrides.conf",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "fsPath": "/home/heisenberg/.config/hypr/hyprland/rules.conf",
+              "external": "file:///home/heisenberg/.config/hypr/hyprland/rules.conf",
+              "path": "/home/heisenberg/.config/hypr/hyprland/rules.conf",
+              "scheme": "file"
+            }
+          ],
+          "toolCallId": "fedbb8b1-3797-4a0e-9820-f863a8a115cd",
+          "toolId": "copilot_searchCodebase"
+        },
+        {
+          "value": "To add a keybind to cycle through workspaces in Hyprland, you can use the cyclenext action with the workspace target in your keybinds.conf.\n\n1. Open `/home/heisenberg/.config/hypr/hyprland/keybinds.conf`.\n2. Add the following line to cycle through workspaces using `Alt+grave` (you can change the key if you prefer):\n\n```\nbind = Alt, grave, cyclenext, workspace\n```\n\nThis will allow you to cycle through workspaces with `Alt+grave`.\n\nNo Visual Studio Code settings or commands are required for this change.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_0f150fc2-cf11-4e82-80a0-48a6a8994b44",
+      "result": {
+        "timings": {
+          "firstProgress": 3542,
+          "totalElapsed": 7860
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "bind = Alt, grave, cyclenext, workspace\n",
+              "language": "",
+              "markdownBeforeBlock": "To add a keybind to cycle through workspaces in Hyprland, you can use the cyclenext action with the workspace target in your keybinds.conf.\n\n1. Open `/home/heisenberg/.config/hypr/hyprland/keybinds.conf`.\n2. Add the following line to cycle through workspaces using `Alt+grave` (you can change the key if you prefer):\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To add a keybind to cycle through workspaces in Hyprland, you can use the cyclenext action with the workspace target in your keybinds.conf.\n\n1. Open `/home/heisenberg/.config/hypr/hyprland/keybinds.conf`.\n2. Add the following line to cycle through workspaces using `Alt+grave` (you can change the key if you prefer):\n\n```\nbind = Alt, grave, cyclenext, workspace\n```\n\nThis will allow you to cycle through workspaces with `Alt+grave`.\n\nNo Visual Studio Code settings or commands are required for this change.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "3c301bc6-8d2f-4f51-9acb-f88fd392c791"
+            }
+          ],
+          "modelMessageId": "a7a188c5-0ec4-4fa6-9528-011f87b3be78",
+          "responseId": "aec07db7-4c0d-4037-9023-25aab7791370",
+          "sessionId": "ca4eaea8-afea-4df2-a929-84737425084f",
+          "agentId": "github.copilot.vscode"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.vscode",
+        "description": "Ask questions about VS Code",
+        "metadata": {
+          "sampleRequest": "What is the command to open the integrated terminal?",
+          "themeIcon": {
+            "id": "vscode"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "vscode",
+        "fullName": "VS Code",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [
+          {
+            "name": "search",
+            "description": "Generate query parameters for workspace search",
+            "sampleRequest": "Search for 'foo' in all files under my 'src' directory"
+          },
+          {
+            "name": "startDebugging",
+            "description": "Generate launch config and start debugging in VS Code (Experimental)",
+            "sampleRequest": "Attach to node app at port 9229",
+            "when": "config.github.copilot.chat.startDebugging.enabled"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "vscode_configuration_questions",
+            "description": "The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions.",
+            "examples": [
+              "Switch to light mode.",
+              "Keyboard shortcut to toggle terminal visibility.",
+              "Settings to enable minimap.",
+              "Whats new in the latest release?"
+            ]
+          },
+          {
+            "category": "configure_python_environment",
+            "description": "The user wants to set up their Python environment.",
+            "examples": [
+              "Create a virtual environment for my project."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999310290,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_3138a7e2-fe06-44b4-94ac-492bf649e32f",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 11
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 12
+            },
+            "text": "doesnt work",
+            "kind": "text"
+          }
+        ],
+        "text": "doesnt work"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "It looks like the `cyclenext` action in Hyprland only works for windows, not workspaces.  \nTo cycle through workspaces, you should use the `workspace` action with `+1` and `-1` to go to the next or previous workspace.\n\nAdd these lines to your Hyprland config (usually in ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "external": "file:///home/heisenberg/.config/hypr/hyprland.conf",
+            "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " or a keybinds file):\n\n````ini\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/hyprland.conf",
+            "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nbind = Alt, Tab, workspace, +1\nbind = Alt, Shift, Tab, workspace, -1\n// ...existing code...\n````\n\n- `Alt+Tab` will go to the next workspace.\n- `Alt+Shift+Tab` will go to the previous workspace.\n\nMake sure to reload Hyprland after saving your config.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_0a198332-7fd5-4a5a-8df3-30dd57bdd689",
+      "result": {
+        "timings": {
+          "firstProgress": 1014,
+          "totalElapsed": 2688
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\nbind = Alt, Tab, workspace, +1\nbind = Alt, Shift, Tab, workspace, -1\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+                "scheme": "file"
+              },
+              "language": "ini",
+              "markdownBeforeBlock": "It looks like the `cyclenext` action in Hyprland only works for windows, not workspaces.  \nTo cycle through workspaces, you should use the `workspace` action with `+1` and `-1` to go to the next or previous workspace.\n\nAdd these lines to your Hyprland config (usually in  or a keybinds file):\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "It looks like the `cyclenext` action in Hyprland only works for windows, not workspaces.  \nTo cycle through workspaces, you should use the `workspace` action with `+1` and `-1` to go to the next or previous workspace.\n\nAdd these lines to your Hyprland config (usually in `hyprland.conf` or a keybinds file):\n\n````ini\n// filepath: /home/heisenberg/.config/hypr/hyprland.conf\n// ...existing code...\nbind = Alt, Tab, workspace, +1\nbind = Alt, Shift, Tab, workspace, -1\n// ...existing code...\n````\n\n- `Alt+Tab` will go to the next workspace.\n- `Alt+Shift+Tab` will go to the previous workspace.\n\nMake sure to reload Hyprland after saving your config.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "66a51fa5-60cc-4866-a897-dc24b0d22998"
+            }
+          ],
+          "modelMessageId": "9e3e8b21-a5a0-4870-8bc4-24fe4b8ebed4",
+          "responseId": "7050dc4e-98fa-49f9-ae99-9d4c653c59f8",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999343271,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_aee5d6f1-6d23-4d36-ab4b-a52928a9af2a",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 41
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 42
+            },
+            "text": "i want to cycle through recent workspaces",
+            "kind": "text"
+          }
+        ],
+        "text": "i want to cycle through recent workspaces"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Hyprland does not natively support cycling through *recent* workspaces (like MRU—most recently used) out of the box. The default `workspace, +1` and `workspace, -1` actions only cycle through workspace numbers in order.\n\n**Workaround:**  \nYou can use the `workspace back_and_forth` action to switch between the current and last used workspace:\n\n````ini\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/hyprland.conf",
+            "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n````\n\nThis will toggle between your two most recently used workspaces with `Alt+Tab`.\n\n**Note:**  \nFor true MRU workspace cycling, you would need a custom Hyprland script or plugin. If you want to explore that, let me know!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_ed6945c0-5a14-4f5b-8cac-3e6ce12b0c70",
+      "result": {
+        "timings": {
+          "firstProgress": 788,
+          "totalElapsed": 2485
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+                "scheme": "file"
+              },
+              "language": "ini",
+              "markdownBeforeBlock": "Hyprland does not natively support cycling through *recent* workspaces (like MRU—most recently used) out of the box. The default `workspace, +1` and `workspace, -1` actions only cycle through workspace numbers in order.\n\n**Workaround:**  \nYou can use the `workspace back_and_forth` action to switch between the current and last used workspace:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Hyprland does not natively support cycling through *recent* workspaces (like MRU—most recently used) out of the box. The default `workspace, +1` and `workspace, -1` actions only cycle through workspace numbers in order.\n\n**Workaround:**  \nYou can use the `workspace back_and_forth` action to switch between the current and last used workspace:\n\n````ini\n// filepath: /home/heisenberg/.config/hypr/hyprland.conf\n// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n````\n\nThis will toggle between your two most recently used workspaces with `Alt+Tab`.\n\n**Note:**  \nFor true MRU workspace cycling, you would need a custom Hyprland script or plugin. If you want to explore that, let me know!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "3ffe16c0-a991-4b1c-a9e4-7ad8814f0b86"
+            }
+          ],
+          "modelMessageId": "4a4c8322-46f1-4b96-9f2e-664ad9b6a7df",
+          "responseId": "b3993a25-6d02-462b-86a6-b056b991290b",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999369333,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_49c66a2c-f54d-4ea7-9c4b-bba1d276f6c3",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 10
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 11
+            },
+            "text": "yes custom",
+            "kind": "text"
+          }
+        ],
+        "text": "yes custom"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "To implement true MRU (most recently used) workspace cycling in Hyprland, you’ll need a script that tracks workspace history and switches to the previous one on a keybind. Here’s a simple approach using a shell script and Hyprland’s IPC.\n\n**1. Create a script to switch to the most recent workspace:**\n\n````bash\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/mru_workspace.sh",
+            "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#!/bin/bash\n\n# Get the list of workspaces sorted by last focus\nrecent=$(hyprctl workspaces -j | jq -r 'sort_by(-.last_focus_time) | .[1].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n````\n\n**2. Make the script executable:**\n\n```bash\nchmod +x ~/.config/hypr/mru_workspace.sh\n```\n\n**3. Add a keybind in your Hyprland config:**\n\n````ini\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/hyprland.conf",
+            "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nbind = Alt, Tab, exec, ~/.config/hypr/mru_workspace.sh\n// ...existing code...\n````\n\n**Requirements:**  \n- `jq` must be installed (`sudo apt install jq`).\n\nThis setup will switch to the most recently used workspace (excluding the current one) when you press `Alt+Tab`.  \nYou can expand this script for more advanced MRU cycling if needed.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_df6d10bb-1f78-4aa8-ace0-2cf40f5e9b7d",
+      "result": {
+        "timings": {
+          "firstProgress": 793,
+          "totalElapsed": 5032
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#!/bin/bash\n\n# Get the list of workspaces sorted by last focus\nrecent=$(hyprctl workspaces -j | jq -r 'sort_by(-.last_focus_time) | .[1].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+                "scheme": "file"
+              },
+              "language": "bash",
+              "markdownBeforeBlock": "To implement true MRU (most recently used) workspace cycling in Hyprland, you’ll need a script that tracks workspace history and switches to the previous one on a keybind. Here’s a simple approach using a shell script and Hyprland’s IPC.\n\n**1. Create a script to switch to the most recent workspace:**\n\n"
+            },
+            {
+              "code": "chmod +x ~/.config/hypr/mru_workspace.sh\n",
+              "language": "bash",
+              "markdownBeforeBlock": "\n**2. Make the script executable:**\n\n"
+            },
+            {
+              "code": "// ...existing code...\nbind = Alt, Tab, exec, ~/.config/hypr/mru_workspace.sh\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+                "scheme": "file"
+              },
+              "language": "ini",
+              "markdownBeforeBlock": "\n**3. Add a keybind in your Hyprland config:**\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To implement true MRU (most recently used) workspace cycling in Hyprland, you’ll need a script that tracks workspace history and switches to the previous one on a keybind. Here’s a simple approach using a shell script and Hyprland’s IPC.\n\n**1. Create a script to switch to the most recent workspace:**\n\n````bash\n// filepath: /home/heisenberg/.config/hypr/mru_workspace.sh\n#!/bin/bash\n\n# Get the list of workspaces sorted by last focus\nrecent=$(hyprctl workspaces -j | jq -r 'sort_by(-.last_focus_time) | .[1].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n````\n\n**2. Make the script executable:**\n\n```bash\nchmod +x ~/.config/hypr/mru_workspace.sh\n```\n\n**3. Add a keybind in your Hyprland config:**\n\n````ini\n// filepath: /home/heisenberg/.config/hypr/hyprland.conf\n// ...existing code...\nbind = Alt, Tab, exec, ~/.config/hypr/mru_workspace.sh\n// ...existing code...\n````\n\n**Requirements:**  \n- `jq` must be installed (`sudo apt install jq`).\n\nThis setup will switch to the most recently used workspace (excluding the current one) when you press `Alt+Tab`.  \nYou can expand this script for more advanced MRU cycling if needed.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "6d6fa301-88e9-4397-8493-8e3a32dfbfe4"
+            }
+          ],
+          "modelMessageId": "5067af50-46ed-4c47-98b0-187dc6958344",
+          "responseId": "5d49a363-26b5-41f2-95e1-0ecb9ad1f4c5",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999418386,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_f2e35a86-a876-483a-9750-eff00f840e4d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 74
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 17
+            },
+            "text": "script run gives jq: error (at <stdin>:81): null (null) c\nannot be negated",
+            "kind": "text"
+          }
+        ],
+        "text": "script run gives jq: error (at <stdin>:81): null (null) c\nannot be negated"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "The error occurs because some workspaces may not have a `last_focus_time` (it’s `null`), and `jq` cannot sort by negating `null`.  \nLet’s fix the script by filtering out workspaces with `null` `last_focus_time`:\n\n````bash\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/mru_workspace.sh",
+            "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#!/bin/bash\n\n# Get the current workspace ID\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\n# Get the most recently focused workspace (excluding current and null last_focus_time)\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n````\n\nThis version:\n- Excludes workspaces with `null` `last_focus_time`\n- Excludes the current workspace\n- Switches to the most recently used workspace\n\nTry this updated script!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_a4df3b0c-f429-44ba-8706-cb8a68c0c871",
+      "result": {
+        "timings": {
+          "firstProgress": 789,
+          "totalElapsed": 2800
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#!/bin/bash\n\n# Get the current workspace ID\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\n# Get the most recently focused workspace (excluding current and null last_focus_time)\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+                "scheme": "file"
+              },
+              "language": "bash",
+              "markdownBeforeBlock": "The error occurs because some workspaces may not have a `last_focus_time` (it’s `null`), and `jq` cannot sort by negating `null`.  \nLet’s fix the script by filtering out workspaces with `null` `last_focus_time`:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "The error occurs because some workspaces may not have a `last_focus_time` (it’s `null`), and `jq` cannot sort by negating `null`.  \nLet’s fix the script by filtering out workspaces with `null` `last_focus_time`:\n\n````bash\n// filepath: /home/heisenberg/.config/hypr/mru_workspace.sh\n#!/bin/bash\n\n# Get the current workspace ID\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\n# Get the most recently focused workspace (excluding current and null last_focus_time)\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Switch to the most recent workspace (not current)\nif [ -n \"$recent\" ]; then\n    hyprctl dispatch workspace \"$recent\"\nfi\n````\n\nThis version:\n- Excludes workspaces with `null` `last_focus_time`\n- Excludes the current workspace\n- Switches to the most recently used workspace\n\nTry this updated script!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "f6667255-7d06-4b4c-bff1-d2147b3b69fd"
+            }
+          ],
+          "modelMessageId": "7137295a-a14d-4668-b116-c243e3c97572",
+          "responseId": "c4b2eb37-293e-44e7-95a8-37cc2a832ad4",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999937470,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_65245539-1bac-425a-8407-b66650bd23f3",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 60
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 4,
+              "endColumn": 1
+            },
+            "text": "Error in changeworkspace, invalid value\n\n[Process exited 0]\n",
+            "kind": "text"
+          }
+        ],
+        "text": "Error in changeworkspace, invalid value\n\n[Process exited 0]\n"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "This error usually means the script is trying to switch to a workspace ID that doesn’t exist or is invalid (e.g., empty or not a number).\n\nLet’s add some debugging and make sure the workspace ID is valid and not empty:\n\n````bash\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/mru_workspace.sh",
+            "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Debug output\necho \"Current workspace: $current\"\necho \"Recent workspace: $recent\"\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    echo \"No valid recent workspace found.\"\nfi\n````\n\n**Instructions:**\n1. Run the script in a terminal to see the debug output.\n2. Make sure there are at least two workspaces open and switched between, so `last_focus_time` is set.\n3. If `recent` is empty, try switching between workspaces manually, then run the script again.\n\nLet me know what the debug output says if it still fails!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_b8ae069a-4d01-4b2e-a96e-98f09efd2178",
+      "result": {
+        "timings": {
+          "firstProgress": 746,
+          "totalElapsed": 4715
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Debug output\necho \"Current workspace: $current\"\necho \"Recent workspace: $recent\"\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    echo \"No valid recent workspace found.\"\nfi\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+                "scheme": "file"
+              },
+              "language": "bash",
+              "markdownBeforeBlock": "This error usually means the script is trying to switch to a workspace ID that doesn’t exist or is invalid (e.g., empty or not a number).\n\nLet’s add some debugging and make sure the workspace ID is valid and not empty:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "This error usually means the script is trying to switch to a workspace ID that doesn’t exist or is invalid (e.g., empty or not a number).\n\nLet’s add some debugging and make sure the workspace ID is valid and not empty:\n\n````bash\n// filepath: /home/heisenberg/.config/hypr/mru_workspace.sh\n#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\n# Debug output\necho \"Current workspace: $current\"\necho \"Recent workspace: $recent\"\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    echo \"No valid recent workspace found.\"\nfi\n````\n\n**Instructions:**\n1. Run the script in a terminal to see the debug output.\n2. Make sure there are at least two workspaces open and switched between, so `last_focus_time` is set.\n3. If `recent` is empty, try switching between workspaces manually, then run the script again.\n\nLet me know what the debug output says if it still fails!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "1be337cb-6acb-461d-85ed-6f6daac4eed6"
+            }
+          ],
+          "modelMessageId": "b6813b2d-65a1-422a-93cc-48f2839bca77",
+          "responseId": "ab48dec7-819f-46ec-a5b7-3838821c43ed",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753999979030,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_39dacb46-6f79-4bc5-9469-887257db79b2",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 76
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 3,
+              "endColumn": 33
+            },
+            "text": "Current workspace: 1\nRecent workspace: null\nNo valid recent workspace found.",
+            "kind": "text"
+          }
+        ],
+        "text": "Current workspace: 1\nRecent workspace: null\nNo valid recent workspace found."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "This means there is no other workspace with a valid `last_focus_time` besides your current one.  \nHyprland only sets `last_focus_time` for workspaces that have been focused at least once.\n\n**How to fix:**\n\n1. **Open at least two workspaces.**\n2. **Switch between them manually** (e.g., with `workspace, +1` and `workspace, -1`).\n3. **Run the script again.**\n\nAfter you’ve switched between workspaces, `last_focus_time` will be set for both, and the script will work as intended.\n\nIf you want the script to always cycle to the next workspace if MRU is not available, you can add a fallback:\n\n````bash\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/mru_workspace.sh",
+            "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    # Fallback: go to next workspace\n    next=$((current + 1))\n    hyprctl dispatch workspace \"$next\"\nfi\n````\n\nThis way, if MRU is not available, it will go to the next workspace.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_5926cb02-061e-4887-baba-9e2f8ada471e",
+      "result": {
+        "timings": {
+          "firstProgress": 1062,
+          "totalElapsed": 5436
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    # Fallback: go to next workspace\n    next=$((current + 1))\n    hyprctl dispatch workspace \"$next\"\nfi\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/mru_workspace.sh",
+                "scheme": "file"
+              },
+              "language": "bash",
+              "markdownBeforeBlock": "This means there is no other workspace with a valid `last_focus_time` besides your current one.  \nHyprland only sets `last_focus_time` for workspaces that have been focused at least once.\n\n**How to fix:**\n\n1. **Open at least two workspaces.**\n2. **Switch between them manually** (e.g., with `workspace, +1` and `workspace, -1`).\n3. **Run the script again.**\n\nAfter you’ve switched between workspaces, `last_focus_time` will be set for both, and the script will work as intended.\n\nIf you want the script to always cycle to the next workspace if MRU is not available, you can add a fallback:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "This means there is no other workspace with a valid `last_focus_time` besides your current one.  \nHyprland only sets `last_focus_time` for workspaces that have been focused at least once.\n\n**How to fix:**\n\n1. **Open at least two workspaces.**\n2. **Switch between them manually** (e.g., with `workspace, +1` and `workspace, -1`).\n3. **Run the script again.**\n\nAfter you’ve switched between workspaces, `last_focus_time` will be set for both, and the script will work as intended.\n\nIf you want the script to always cycle to the next workspace if MRU is not available, you can add a fallback:\n\n````bash\n// filepath: /home/heisenberg/.config/hypr/mru_workspace.sh\n#!/bin/bash\n\ncurrent=$(hyprctl activeworkspace -j | jq -r '.id')\n\nrecent=$(hyprctl workspaces -j | jq -r \\\n  '[.[] | select(.last_focus_time != null and .id != '\"$current\"')] | sort_by(-.last_focus_time) | .[0].id')\n\nif [[ -n \"$recent\" && \"$recent\" =~ ^[0-9]+$ ]]; then\n    hyprctl dispatch workspace \"$recent\"\nelse\n    # Fallback: go to next workspace\n    next=$((current + 1))\n    hyprctl dispatch workspace \"$next\"\nfi\n````\n\nThis way, if MRU is not available, it will go to the next workspace.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "8e051a0d-5603-4aea-983b-3bcf48bd86fe"
+            }
+          ],
+          "modelMessageId": "61f615d3-8427-4e98-8d82-9e92837c053a",
+          "responseId": "8111f31e-c58f-480e-93fc-47fe45a1867f",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1754000031744,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_34db7ee7-d9f6-427c-9208-9e6285458274",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 33
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 34
+            },
+            "text": "there is a keybind inherently too",
+            "kind": "text"
+          }
+        ],
+        "text": "there is a keybind inherently too"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Yes, Hyprland has a built-in keybind for toggling between the current and last used workspace:\n\n````ini\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/hypr/hyprland.conf",
+            "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n````\n\nThis uses the `back_and_forth` action, which switches between your two most recently used workspaces.  \nNo script is needed for this behavior.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_1f3e5514-7878-4671-ad5e-e70e331930e5",
+      "result": {
+        "timings": {
+          "firstProgress": 811,
+          "totalElapsed": 1457
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/hypr/hyprland.conf",
+                "scheme": "file"
+              },
+              "language": "ini",
+              "markdownBeforeBlock": "Yes, Hyprland has a built-in keybind for toggling between the current and last used workspace:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Yes, Hyprland has a built-in keybind for toggling between the current and last used workspace:\n\n````ini\n// filepath: /home/heisenberg/.config/hypr/hyprland.conf\n// ...existing code...\nbind = Alt, Tab, workspace, back_and_forth\n// ...existing code...\n````\n\nThis uses the `back_and_forth` action, which switches between your two most recently used workspaces.  \nNo script is needed for this behavior.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "316b4028-8b39-40a2-832c-77aec23021d1"
+            }
+          ],
+          "modelMessageId": "68e3c9e2-217f-4a1d-96b5-83088f7eb036",
+          "responseId": "c200d895-094c-472d-87d9-db7ff3048c35",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1754000073124,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_75f85002-7ce3-4f66-88a6-7b0b42aca00c",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 10
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 11
+            },
+            "text": "doesnt run",
+            "kind": "text"
+          }
+        ],
+        "text": "doesnt run"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "If the built-in keybind  \n```ini\nbind = Alt, Tab, workspace, back_and_forth\n```\ndoesn't work, here are some troubleshooting steps:\n\n1. **Check for conflicting keybinds:**  \n   Make sure `Alt+Tab` isn’t already bound to another action in your Hyprland config.\n\n2. **Reload Hyprland config:**  \n   Run in terminal:\n   ```bash\n   hyprctl reload\n   ```\n\n3. **Try a different key combination:**  \n   For example:\n   ```ini\n   bind = Alt, Q, workspace, back_and_forth\n   ```\n\n4. **Check for syntax errors:**  \n   Ensure there are no typos or formatting issues in your config file.\n\n5. **Verify Hyprland version:**  \n   `back_and_forth` requires a recent Hyprland version.  \n   Check with:\n   ```bash\n   hyprctl version\n   ```\n\nIf it still doesn’t work, please share your relevant keybind section for further help.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/hypr/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_14466663-c128-4a1e-a6de-ec3d5943d7ab",
+      "result": {
+        "timings": {
+          "firstProgress": 849,
+          "totalElapsed": 2392
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "bind = Alt, Tab, workspace, back_and_forth\n",
+              "language": "ini",
+              "markdownBeforeBlock": "If the built-in keybind  \n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "If the built-in keybind  \n```ini\nbind = Alt, Tab, workspace, back_and_forth\n```\ndoesn't work, here are some troubleshooting steps:\n\n1. **Check for conflicting keybinds:**  \n   Make sure `Alt+Tab` isn’t already bound to another action in your Hyprland config.\n\n2. **Reload Hyprland config:**  \n   Run in terminal:\n   ```bash\n   hyprctl reload\n   ```\n\n3. **Try a different key combination:**  \n   For example:\n   ```ini\n   bind = Alt, Q, workspace, back_and_forth\n   ```\n\n4. **Check for syntax errors:**  \n   Ensure there are no typos or formatting issues in your config file.\n\n5. **Verify Hyprland version:**  \n   `back_and_forth` requires a recent Hyprland version.  \n   Check with:\n   ```bash\n   hyprctl version\n   ```\n\nIf it still doesn’t work, please share your relevant keybind section for further help.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "1f7780fa-c979-4145-bd1b-3f559740bd15"
+            }
+          ],
+          "modelMessageId": "fbe204dc-088b-4086-ae9e-2bfd7468b3b3",
+          "responseId": "7385fbd2-b84f-4d01-8a7a-0bfdfdc0a902",
+          "sessionId": "52870b4d-8dd4-4297-9ceb-438efcb9b8bc",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1754000100044,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "cf5fbd3d-f2a2-42e1-8442-3988d31c305d",
+  "creationDate": 1753999181567,
+  "isImported": false,
+  "lastMessageDate": 1754000100044,
+  "customTitle": "Custom keybinding for switching workspaces in VS Code"
+}

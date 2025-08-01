@@ -1,9 +1,0 @@
-[
-  {
-    "command": [
-      "zen-browser",
-      "--new-window"
-    ],
-    "working_directory": "/home/heisenberg"
-  }
-]

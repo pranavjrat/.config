@@ -1,0 +1,217 @@
+{
+  "version": 3,
+  "requesterUsername": "pranavjrat",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/149122738",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_b16f2c47-fb19-4f34-a89c-3235bb6f8eee",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 90
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 15
+            },
+            "text": "change the todo to absidian such bind = Alt, N, exec, caelestia toggle todo\nopens obsidian",
+            "kind": "text"
+          }
+        ],
+        "text": "change the todo to absidian such bind = Alt, N, exec, caelestia toggle todo\nopens obsidian"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "To change the \"todo\" binding to open Obsidian using the key combination `Alt+N` and execute `caelestia toggle todo`, you likely need to update your keybindings or configuration file for Caelestia/Quickshell.\n\nAssuming you have a config file (e.g., `bindings.conf` or similar), here’s how you might update it:\n\n````ini\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/quickshell/caelestia/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/heisenberg/.config/quickshell/caelestia/bindings.conf",
+            "path": "/home/heisenberg/.config/quickshell/caelestia/bindings.conf",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nbind = Alt+N, exec, caelestia toggle todo; obsidian\n// ...existing code...\n````\n\n**Explanation:**\n- `bind = Alt+N` sets the keybinding.\n- `exec` runs the following commands.\n- `caelestia toggle todo` toggles your todo.\n- `obsidian` opens Obsidian (make sure the command is correct for your system; it might be `obsidian` or `obsidian-app`).\n\nIf your config uses a different syntax or file, please specify, and I’ll adjust the code accordingly.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/heisenberg/.config/quickshell/caelestia/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_7f8b36af-ec84-4cb3-8d03-72b7d97418a3",
+      "result": {
+        "timings": {
+          "firstProgress": 820,
+          "totalElapsed": 4897
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\nbind = Alt+N, exec, caelestia toggle todo; obsidian\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/heisenberg/.config/quickshell/caelestia/bindings.conf",
+                "scheme": "file"
+              },
+              "language": "ini",
+              "markdownBeforeBlock": "To change the \"todo\" binding to open Obsidian using the key combination `Alt+N` and execute `caelestia toggle todo`, you likely need to update your keybindings or configuration file for Caelestia/Quickshell.\n\nAssuming you have a config file (e.g., `bindings.conf` or similar), here’s how you might update it:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To change the \"todo\" binding to open Obsidian using the key combination `Alt+N` and execute `caelestia toggle todo`, you likely need to update your keybindings or configuration file for Caelestia/Quickshell.\n\nAssuming you have a config file (e.g., `bindings.conf` or similar), here’s how you might update it:\n\n````ini\n// filepath: /home/heisenberg/.config/quickshell/caelestia/bindings.conf\n// ...existing code...\nbind = Alt+N, exec, caelestia toggle todo; obsidian\n// ...existing code...\n````\n\n**Explanation:**\n- `bind = Alt+N` sets the keybinding.\n- `exec` runs the following commands.\n- `caelestia toggle todo` toggles your todo.\n- `obsidian` opens Obsidian (make sure the command is correct for your system; it might be `obsidian` or `obsidian-app`).\n\nIf your config uses a different syntax or file, please specify, and I’ll adjust the code accordingly.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "c0bf9980-d891-46dd-9e3c-4d3fba3f3a00"
+            }
+          ],
+          "modelMessageId": "39a89570-2264-4ef1-9c8c-312f3de1a71e",
+          "responseId": "a2d19b35-a278-4460-be6b-d51dd3063242",
+          "sessionId": "2fc0f2fe-4bfd-4ec9-98c7-4813c7afef9d",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "pranavjrat",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/149122738",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1754003152453,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "70cb7ca0-a86d-4cb5-8707-59bd4713c362",
+  "creationDate": 1754002869232,
+  "isImported": false,
+  "lastMessageDate": 1754003152453,
+  "customTitle": "Binding key to open Obsidian and toggle todo"
+}
