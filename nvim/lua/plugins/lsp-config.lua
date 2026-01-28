@@ -21,6 +21,7 @@ return {
           "pyright",               -- Python LSP
           "tailwindcss",           -- TailwindCSS Language Server
           "ts_ls",                 -- TypeScript LSP
+          "jdtls",                -- Java Development Tools Language Server
         },
         auto_install = true,
       })
