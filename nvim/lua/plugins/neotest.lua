@@ -6,14 +6,19 @@ return {
       "nvim-lua/plenary.nvim",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-treesitter/nvim-treesitter",
-      "rcasia/neotest-java", -- Java testing adapter
+      "rcasia/neotest-java",
+      "nvim-neotest/neotest-jest",
     },
     config = function()
       require("neotest").setup({
         adapters = {
+          require("neotest-jest")({
+            jestCommand = "npx jest",
+            jestConfigFile = "jest.config.ts",
+          }),
           require("neotest-java")({
-            ignore_wrapper = false, -- whether to ignore maven/gradle wrapper
-            junit_jar = nil, -- default: .local/share/nvim/neotest-java/junit-platform-console-standalone-[version].jar
+            ignore_wrapper = false,
+            junit_jar = nil,
           }),
         },
         discovery = {
@@ -42,7 +47,7 @@ return {
           running = "󰑮",
           running_animated = { "/", "|", "\\", "-", "/", "|", "\\", "-" },
           skipped = "○",
-          unknown = "?"
+          unknown = "?",
         },
         highlights = {
           adapter_name = "NeotestAdapterName",
@@ -61,48 +66,35 @@ return {
           skipped = "NeotestSkipped",
           target = "NeotestTarget",
           test = "NeotestTest",
-          unknown = "NeotestUnknown"
-        }
+          unknown = "NeotestUnknown",
+        },
       })
-      
-      -- Key mappings for neotest
+
       local opts = { noremap = true, silent = true }
-      
-      -- Run tests
-      vim.keymap.set("n", "<leader>tt", function()
+      vim.keymap.set("n", "<leader>ttt", function()
         require("neotest").run.run()
       end, opts)
-      
       vim.keymap.set("n", "<leader>tf", function()
         require("neotest").run.run(vim.fn.expand("%"))
       end, opts)
-      
       vim.keymap.set("n", "<leader>td", function()
-        require("neotest").run.run({strategy = "dap"})
+        require("neotest").run.run({ strategy = "dap" })
       end, opts)
-      
       vim.keymap.set("n", "<leader>ts", function()
         require("neotest").run.stop()
       end, opts)
-      
-      -- Test output and summary
       vim.keymap.set("n", "<leader>to", function()
         require("neotest").output.open({ enter = true, auto_close = true })
       end, opts)
-      
       vim.keymap.set("n", "<leader>tO", function()
         require("neotest").output_panel.toggle()
       end, opts)
-      
       vim.keymap.set("n", "<leader>tS", function()
         require("neotest").summary.toggle()
       end, opts)
-      
-      -- Test navigation
       vim.keymap.set("n", "[t", function()
         require("neotest").jump.prev({ status = "failed" })
       end, opts)
-      
       vim.keymap.set("n", "]t", function()
         require("neotest").jump.next({ status = "failed" })
       end, opts)

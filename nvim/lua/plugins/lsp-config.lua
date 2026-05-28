@@ -11,17 +11,17 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "cssls",                 -- CSS LSP
-          "emmet_language_server", -- Emmet Language Server
-          "emmet_ls",              -- Emmet LS
-          "eslint",                -- ESLint LSP
-          "html",                  -- HTML LSP
-          "jsonls",                -- JSON LSP
-          "lua_ls",                -- Lua Language Server
-          "pyright",               -- Python LSP
-          "tailwindcss",           -- TailwindCSS Language Server
-          "ts_ls",                 -- TypeScript LSP
-          "jdtls",                -- Java Development Tools Language Server
+          "cssls",
+          "emmet_language_server",
+          "emmet_ls",
+          "eslint",
+          "html",
+          "jsonls",
+          "lua_ls",
+          "pyright",
+          "tailwindcss",
+          "ts_ls",
+          "jdtls",
         },
         auto_install = true,
       })
@@ -33,15 +33,13 @@ return {
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-      local lspconfig = require("lspconfig")
-      
-      -- Add performance flags for all LSP servers
       local default_flags = {
         debounce_text_changes = 300,
         allow_incremental_sync = true,
       }
-      
-      lspconfig.ts_ls.setup({
+
+      -- ts_ls
+      vim.lsp.config('ts_ls', {
         capabilities = capabilities,
         flags = default_flags,
         settings = {
@@ -69,16 +67,22 @@ return {
           }
         }
       })
-      lspconfig.html.setup({
+
+      -- html
+      vim.lsp.config('html', {
         capabilities = capabilities,
         flags = default_flags,
       })
-      lspconfig.clangd.setup({
+
+      -- clangd
+      vim.lsp.config('clangd', {
         capabilities = capabilities,
         flags = default_flags,
-        cmd = { "clangd", "--background-index=false", "--clang-tidy=false" }  -- Disable resource-heavy features
+        cmd = { "clangd", "--background-index=false", "--clang-tidy=false" }
       })
-      lspconfig.lua_ls.setup({
+
+      -- lua_ls
+      vim.lsp.config('lua_ls', {
         capabilities = capabilities,
         flags = default_flags,
         settings = {
@@ -88,119 +92,125 @@ return {
             },
             workspace = {
               library = vim.api.nvim_get_runtime_file("", true),
-              checkThirdParty = false,  -- Disable third party checking
+              checkThirdParty = false,
             },
             telemetry = {
               enable = false,
             },
             hint = {
-              enable = false,  -- Disable hints to save resources
+              enable = false,
             },
           }
         }
       })
-      lspconfig.tailwindcss.setup({
+
+      -- tailwindcss
+      vim.lsp.config('tailwindcss', {
         capabilities = capabilities,
         flags = default_flags,
       })
-      lspconfig.cssls.setup {
+
+      -- cssls
+      vim.lsp.config('cssls', {
         capabilities = capabilities,
         flags = default_flags,
-      }
-      lspconfig.eslint.setup {
+      })
+
+      -- eslint
+      vim.lsp.config('eslint', {
         capabilities = capabilities,
         flags = default_flags,
         settings = {
           workingDirectory = { mode = "auto" },
           codeActionOnSave = {
-            enable = false,  -- Disable auto-fix on save to reduce CPU
+            enable = false,
           }
         }
-      }
-      lspconfig.jsonls.setup {
+      })
+
+      -- jsonls
+      vim.lsp.config('jsonls', {
         capabilities = capabilities,
         flags = default_flags,
-      }
-      lspconfig.emmet_language_server.setup({
+      })
+
+      -- emmet_language_server
+      vim.lsp.config('emmet_language_server', {
         filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "tsx" },
-        -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
-        -- **Note:** only the options listed in the table are supported.
         init_options = {
-          ---@type table<string, string>
           includeLanguages = {},
-          --- @type string[]
           excludeLanguages = {},
-          --- @type string[]
           extensionsPath = {},
-          --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/preferences/)
           preferences = {},
-          --- @type boolean Defaults to `true`
           showAbbreviationSuggestions = true,
-          --- @type "always" | "never" Defaults to `"always"`
           showExpandedAbbreviation = "always",
-          --- @type boolean Defaults to `false`
           showSuggestionsAsSnippets = false,
-          --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/syntax-profiles/)
           syntaxProfiles = {},
-          --- @type table<string, string> [Emmet Docs](https://docs.emmet.io/customization/snippets/#variables)
           variables = {},
         },
       })
-      
-      -- Configure diagnostics to show by default with performance optimizations
+
+      -- enable all servers
+      vim.lsp.enable({
+        'ts_ls',
+        'html',
+        'clangd',
+        'lua_ls',
+        'tailwindcss',
+        'cssls',
+        'eslint',
+        'jsonls',
+        'emmet_language_server',
+      })
+
+      -- diagnostics
       vim.diagnostic.config({
         virtual_text = {
           enabled = true,
-          source = "if_many",  -- Show source only if multiple sources
+          source = "if_many",
           prefix = '●',
           spacing = 2,
         },
         signs = true,
         underline = true,
-        update_in_insert = false,  -- Don't update diagnostics while typing
+        update_in_insert = false,
         severity_sort = true,
         float = {
           border = 'rounded',
           source = 'if_many',
           header = '',
           prefix = '',
-          max_width = 80,  -- Limit float width
-          max_height = 20,  -- Limit float height
+          max_width = 80,
+          max_height = 20,
         },
       })
-      
-      -- Configure diagnostic signs
+
+      -- diagnostic signs
       local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
       for type, icon in pairs(signs) do
         local hl = "DiagnosticSign" .. type
         vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
       end
-      
-      -- Auto-show diagnostics on cursor hold with throttling
-      vim.api.nvim_create_autocmd({ "CursorHold" }, {  -- Removed CursorHoldI to reduce CPU usage
-        group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
-        callback = function ()
-          -- Only show if there are diagnostics on the current line
-          local diagnostics = vim.diagnostic.get(0, { lnum = vim.fn.line('.') - 1 })
-          if #diagnostics > 0 then
-            vim.diagnostic.open_float(nil, {focus=false, scope="line"})
-          end
-        end
-      })
-      
+
+      -- keymaps
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-      vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})
-      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
-      vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
+      vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
+      vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
     end,
   },
   {
     "olrtg/nvim-emmet",
+    ft = { "html", "css", "javascriptreact", "typescriptreact" },
     config = function()
-      vim.keymap.set({ "n", "v" }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
+      local emmet = require("nvim-emmet")
+      vim.keymap.set({ "n", "v" }, "<leader>xe", emmet.wrap_with_abbreviation, {
+        desc = "Emmet expand",
+      })
     end,
   },
 }

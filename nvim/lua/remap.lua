@@ -55,35 +55,101 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
--- Show diagnostics for current line in a floating window
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+----------------------------------------------------------------------------------
 
--- Go to next diagnostic
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
+-- Daily notes
+vim.keymap.set("n", "<leader>on", "<cmd>ObsidianToday<cr>", { desc = "Obsidian Today" })
+vim.keymap.set("n", "<leader>oy", "<cmd>ObsidianYesterday<cr>", { desc = "Obsidian Yesterday" })
+vim.keymap.set("n", "<leader>om", "<cmd>ObsidianTomorrow<cr>", { desc = "Obsidian Tomorrow" })
+vim.keymap.set("n", "<leader>od", "<cmd>ObsidianDailies<cr>", { desc = "Obsidian Dailies" })
 
--- Go to previous diagnostic
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+-- Notes
+vim.keymap.set("v", "<leader>oe", "<cmd>ObsidianExtractNote<cr>", { desc = "Obsidian Extract Note" })
 
--- Show diagnostics list in quickfix window
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
+-- Extra useful ones
+vim.keymap.set("n", "<leader>oo", "<cmd>ObsidianOpen<cr>", { desc = "Obsidian Open in App" })
+vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<cr>", { desc = "Obsidian Search" })
+vim.keymap.set("n", "<leader>ov", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Obsidian Quick Switch" })
+vim.keymap.set("n", "<leader>ob", "<cmd>ObsidianBacklinks<cr>", { desc = "Obsidian Backlinks" })
+vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianTags<cr>", { desc = "Obsidian Tags" })
 
-vim.keymap.set("n", "]f", function()
-  require("nvim-treesitter.textobjects.move").goto_next_start("@function.outer")
-end, { desc = "Next function start" })
+----------------------------------------------------------------------------------
 
-vim.keymap.set("n", "[f", function()
-  require("nvim-treesitter.textobjects.move").goto_previous_start("@function.outer")
-end, { desc = "Prev function start" })
+-- keymaps
+-- You can use the capture groups defined in `textobjects.scm`
+vim.keymap.set({ "x", "o" }, "am", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@function.outer", "textobjects")
+end)
+vim.keymap.set({ "x", "o" }, "im", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@function.inner", "textobjects")
+end)
+vim.keymap.set({ "x", "o" }, "ac", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@class.outer", "textobjects")
+end)
+vim.keymap.set({ "x", "o" }, "ic", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@class.inner", "textobjects")
+end)
+-- You can also use captures from other query groups like `locals.scm`
+vim.keymap.set({ "x", "o" }, "as", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@local.scope", "locals")
+end)
 
-vim.keymap.set("n", "]F", function()
-  require("nvim-treesitter.textobjects.move").goto_next_end("@function.outer")
-end, { desc = "Next function end" })
+-- keymaps
+-- You can use the capture groups defined in `textobjects.scm`
+vim.keymap.set({ "n", "x", "o" }, "]m", function()
+  require("nvim-treesitter-textobjects.move").goto_next_start("@function.outer", "textobjects")
+end)
+vim.keymap.set({ "n", "x", "o" }, "]]", function()
+  require("nvim-treesitter-textobjects.move").goto_next_start("@class.outer", "textobjects")
+end)
+-- You can also pass a list to group multiple queries.
+vim.keymap.set({ "n", "x", "o" }, "]o", function()
+  require("nvim-treesitter-textobjects.move").goto_next_start({"@loop.inner", "@loop.outer"}, "textobjects")
+end)
+-- You can also use captures from other query groups like `locals.scm` or `folds.scm`
+vim.keymap.set({ "n", "x", "o" }, "]s", function()
+  require("nvim-treesitter-textobjects.move").goto_next_start("@local.scope", "locals")
+end)
+vim.keymap.set({ "n", "x", "o" }, "]z", function()
+  require("nvim-treesitter-textobjects.move").goto_next_start("@fold", "folds")
+end)
 
-vim.keymap.set("n", "[F", function()
-  require("nvim-treesitter.textobjects.move").goto_previous_end("@function.outer")
-end, { desc = "Prev function end" })
+vim.keymap.set({ "n", "x", "o" }, "]M", function()
+  require("nvim-treesitter-textobjects.move").goto_next_end("@function.outer", "textobjects")
+end)
+vim.keymap.set({ "n", "x", "o" }, "][", function()
+  require("nvim-treesitter-textobjects.move").goto_next_end("@class.outer", "textobjects")
+end)
 
--- Add this to your Neovim configuration (init.lua or a separate keymaps file)
+vim.keymap.set({ "n", "x", "o" }, "[m", function()
+  require("nvim-treesitter-textobjects.move").goto_previous_start("@function.outer", "textobjects")
+end)
+vim.keymap.set({ "n", "x", "o" }, "[[", function()
+  require("nvim-treesitter-textobjects.move").goto_previous_start("@class.outer", "textobjects")
+end)
+
+vim.keymap.set({ "n", "x", "o" }, "[M", function()
+  require("nvim-treesitter-textobjects.move").goto_previous_end("@function.outer", "textobjects")
+end)
+vim.keymap.set({ "n", "x", "o" }, "[]", function()
+  require("nvim-treesitter-textobjects.move").goto_previous_end("@class.outer", "textobjects")
+end)
+
+-- Go to either the start or the end, whichever is closer.
+-- Use if you want more granular movements
+vim.keymap.set({ "n", "x", "o" }, "]c", function()
+  require("nvim-treesitter-textobjects.move").goto_next("@conditional.outer", "textobjects")
+end)
+vim.keymap.set({ "n", "x", "o" }, "[c", function()
+  require("nvim-treesitter-textobjects.move").goto_previous("@conditional.outer", "textobjects")
+end)
+
+----------------------------------------------------------------------------------
+
+vim.keymap.set('n', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
+vim.keymap.set('t', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
+vim.keymap.set('n', '<leader>tk', '<cmd>TermExec cmd="exit"<CR>', { desc = 'Kill all terminals' })
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
 
 local function compile_and_run()
     local filetype = vim.bo.filetype
@@ -150,15 +216,7 @@ end
 vim.keymap.set('n', '<F5>', compile_and_run, { desc = 'Compile and run current file' })
 vim.keymap.set('n', '<leader>r', compile_and_run, { desc = 'Compile and run current file' })
 
--- Optional: Add a keymap to kill all terminals
-vim.keymap.set('n', '<leader>tk', '<cmd>TermExec cmd="exit"<CR>', { desc = 'Kill all terminals' })
 
--- Optional: Add keymap to open a general terminal
-vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
-
--- Simple keymap to open/toggle terminal
-vim.keymap.set('n', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
-vim.keymap.set('t', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = 'Toggle terminal' })
 
 -- Java template creation
 local function create_java_file()
@@ -211,4 +269,27 @@ end
 -- Keymap for creating new Java files
 vim.keymap.set("n", "<leader>jf", create_java_file, { desc = "Create new Java file from template" })
 
+vim.keymap.set("n", "<Tab>", ":bnext<CR>")
+vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
 
+---------------------------------------------------------------------------------------
+local current_theme = "vesper"
+
+local function toggle_theme()
+  if current_theme == "vesper" then
+    current_theme = "paper"
+    vim.cmd.colorscheme("paper")
+    print("Theme: paper")
+  else
+    current_theme = "vesper"
+    vim.cmd.colorscheme("vesper")
+    print("Theme: vesper")
+  end
+  -- remove these two lines
+  -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  require("lualine").setup({ options = { theme = "auto" } })
+end
+
+vim.keymap.set("n", "<leader>tc", toggle_theme, { desc = "Toggle theme" })
+------------------------------------------------------------------------------------------

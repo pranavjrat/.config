@@ -1,2 +1,8 @@
 [ElisaFileIndexer]
 RootPath[$e]=$HOME/Music
+
+[UiSettings]
+ColorScheme=KvGnomish
+
+[Views]
+SortRolePreferences=Track==DurationRole
